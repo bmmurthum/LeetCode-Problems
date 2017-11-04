@@ -5,5 +5,5 @@ The following are a list of solutions to practice problems provided by [LeetCode
 ## List of Problems by Date
 
 | # | Title | Solution | Difficulty | Date |
-|---| ----- | -------- | ---------- | ---- |
+|:-:|:-----:|:--------:|:----------:|:----:|
 |1|[Two Sum](https://leetcode.com/problems/two-sum/description/) | C++ | Easy | Nov 3, 2017 |
