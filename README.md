@@ -7,3 +7,4 @@ The following are a list of solutions to practice problems provided by [LeetCode
 | # | Title | Solution | Difficulty | Date |
 |:-:|:-----:|:--------:|:----------:|:----:|
 |1|[Two Sum](https://leetcode.com/problems/two-sum/description/) | [C++](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Two-Sum) | Easy | Nov 3, 2017 |
+|5|[Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-substring/) | [C++](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Longest-Palindromic-Substring) | Medium | Jan 16, 2018 |
