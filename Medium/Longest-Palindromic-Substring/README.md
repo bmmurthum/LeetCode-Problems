@@ -27,7 +27,7 @@ The program runs through the test cases with a timer to check for efficiency.
 
 ## Sample Inputs and Runtimes
 
-The run-time included with each case is particular to the case involved. Each test-case would run at an identical runtime each time tested on the system. The measurement in milliseconds represents the time for the goal-function of `longestPalindrome()` to return a palindrome.
+The run-time required to find the solution included is particular to the case involved, not particularly to sizes of problems. As programmed, each test-case below completes at an identical runtime each time, as tested on the system. The measurement in milliseconds represents the time for the goal-function of `longestPalindrome()` to return a palindrome.
 
 **Case 1:** Multiple palindromes (0.001ms)
 ```
@@ -54,7 +54,7 @@ Return "tat".
 Given "tootsieroll",
 Return "toot".
 ```
-**Case 6:** 20-letter given, with only one 3-letter palindrome (0.009)
+**Case 6:** 20-letter given, with only one 3-letter palindrome (0.009ms)
 ```
 Given "dadabcdefghijklmnopq",
 Return "dad".
