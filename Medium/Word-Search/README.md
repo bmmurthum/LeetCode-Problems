@@ -4,10 +4,10 @@
 
 Given a 2D board and a word, find if the word exists in the grid.
 
-The word can be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those 
+The word can be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those
 horizontally or vertically neighboring. The same letter cell may not be used more than once.
 
-**Example:** 
+**Example:**
 ```
 board = [['A','B','C'],
          ['D','E','F'],
@@ -31,8 +31,6 @@ There were some particular optimizations that I put particular attention to.
 - With an understanding that the array boards could become very large, causing much effort to be put on the recursive algorithm, I made sure to include a speedy, preliminary test to check for the possibility of finding the word. This reduced runtimes dramatically for these cases of false-returns.
 
 ## Sample Inputs and Runtimes
-
-...
 
 **Case 1:** Multiple palindromes (0.001ms)
 ```
