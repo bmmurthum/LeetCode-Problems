@@ -2,9 +2,7 @@
 
 **Description:**
 
-Given a string, find the length of the longest substring without repeating characters.
-
-Solution written in Python 3.8.5.
+Given a string, find the length of the longest substring without repeating characters. Solution written in Python 3.8.5.
 
 **Example:**
 ```
