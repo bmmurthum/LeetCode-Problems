@@ -30,19 +30,6 @@ There were some particular optimizations that I put particular attention to.
 - There was an eye to reduction of memory calls, for the sake of efficiency, particularly within the recursive method.
 - With an understanding that the array boards could become very large, causing much effort to be put on the recursive algorithm, I made sure to include a speedy, preliminary test to check for the possibility of finding the word. This reduced runtimes dramatically for these cases of false-returns.
 
-## Sample Inputs and Runtimes
-
-**Case 1:** Multiple palindromes (0.001ms)
-```
-Given "dadijmom",
-Return "dad".
-```
-**Case 2:** No palindromes (0.002ms)
-```
-Given "abcdefghi",
-Return "NULL".
-```
-
 ## Further Inquiry
 
 - Have this functionality be able to search boards loaded from a text file
