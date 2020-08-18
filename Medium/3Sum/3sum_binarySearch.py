@@ -8,12 +8,31 @@
 #   such that a + b + c = 0? Find all unique triplets in the array which gives
 #   the sum of zero.
 #
-# OVERVIEW: This program (1) sorts the list of given integers, (2) handles many
-#   edge cases, then (3) iterates through the list with a left-most value and
-#   two moving indexes that look for a match with that first. The incremental
-#   moving of the two higher indexes allows for an avoidance of a three-deep
-#   nested loop. To view the movement of the indexes, there is a comment that
-#   holds a viewable output.
+# OVERVIEW: For the consideration that this program may handle many cases one
+#   after another, I took the handling of edge cases to be a first priority of
+#   the algorithm so that the process-heavy nested loops may be avoided. The
+#   general steps of this program are (1) handle edge cases, (2) format and
+#   sort the given list of integers, finding the zero in the list, (3) iterate
+#   through the list with consideration to the nature of sums and integers. The
+#   loops avoid duplicate outputs by having both the outer and middle loop skip
+#   checking an integer if the last integer was the same value. For the sake of
+#   efficiency in runtime, the inner-most loop only checks on positive numbers
+#   and stops iterating on (1) finding a success, or (2) going out of possible
+#   range of success.
+#
+# REFLECTION: I definitely ran into off-by-one errors and overlooked variations
+#   of edge cases. I initially thought that my loops were watertight, only to
+#   have that disproved by Leetcode's tests over and over. This emphasizes the
+#   importance of having thorough test cases and understanding of the useful
+#   scope of the tool. By outputting a display of the stepping of the values
+#   within the iterations, I could quickly find what the issues were within
+#   the logic.
+#     There's a given case of 3000 numbers with values between -100,000 and
+#   100,000. My initial code had the loop of C incrementing through values after
+#   B's index, but with so many values, Leetcode returned a "Time Limit
+#   Exceeded" error. I then went to redevelop the C loop as a binary-search.
+#   This binary-search option was also too slow for LeetCode's approval. From
+#   here I looked to other approaches that may have clever use of the set.
 
 from typing import List
 
@@ -111,94 +130,146 @@ test17 = [82597,-9243,62390,83030,-97960,-26521,-61011,83390,-38677,12333,75987,
 
 
 # Which test to run.
-testList = test12
+testList = test16
 
 
 # Returns a list of three-part lists, where the inner lists are three integers
 # that add up to a sum of zero.
 def threeSum(nums: List[int]) -> List[List[int]]:
+    tempNums = []
+    newNums = []
 
     print("Original List: ", nums)
-
-    # List of results to return.
-    newNums = []
 
     # Edge case of no list.
     if nums == []:
         return newNums
+
     # Edge case of [0,0,0]
     if nums.count(0) >= 3:
-        # print("More than three zeros.")
         newNums.append([0,0,0])
 
     # For any case of three of an integer, remove one.
     # There are no cases of three equal integers summing to 0, besides 0.
-    removeNums = []
-    for i in range(0, len(nums) - 1):
-        if nums.count(nums[i]) >= 3:
-            removeNums.append(nums[i])
-    for item in removeNums:
-        while (nums.count(item) > 2):
-            nums.remove(item)
-
+    for item in nums:
+        if nums.count(item) >= 3:
+            while (nums.count(item) > 2):
+                nums.remove(item)
     # There are no possible cases of two zeros and another integer summing to 0.
     while (nums.count(0) > 1):
         nums.remove(0)
 
-    # Sort.
+    # Sort, then find positive half of the list.
     nums.sort()
+    posIndex = 0
+    if 0 in nums:
+        posIndex = nums.index(0)
+    else:
+        for iter in range(len(nums)):
+            if nums[iter] >= 0:
+                posIndex = iter
+                break
 
     # Edge case of only three numbers.
     if len(nums) == 3:
-        # print("Only three numbers.")
         if nums[0] + nums[1] + nums[2] == 0:
-            newNums.append([nums[0], nums[1], nums[2]])
+            newNums.append([nums[0],nums[1],nums[2]])
             return newNums
 
     print("Editted List: ", nums)
+    print("Zero: ", posIndex)
 
     # If there are no negative numbers, there are no cases.
     if nums[0] >= 0:
-        # print("No negatives.")
         return newNums
     # If there are no positive numbers, there are no cases.
     if nums[len(nums) - 1] <= 0:
-        # print("No positives.")
         return newNums
 
-    # Iterate from lowest to highest with one index. Use the other two to find
-    # values that could work with that first value.
+    # If there is no zero in list, remember.
+    hasZero = False
+    if 0 in nums:
+        hasZero = True
+    lowestNumber = nums[0]
+    highestNumber = nums[len(nums)-1]
 
-    # Lowest-Most Index
-    a = 0
-    while a < (len(nums) - 2):
-        # Middle Index
-        b = a + 1
-        # Highest Index
-        c = len(nums) - 1
-        while (b < c):
-            print("A:", nums[a], "B:", nums[b], "C:", nums[c])
-            if nums[a] + nums[b] + nums[c] == 0:
-                print("Solution: ", nums[a], "+", nums[b], "+", nums[c])
-                newNums.append([nums[a], nums[b], nums[c]])
-                if nums[b] == nums[b+1]:
-                    b += 2
+    # The first number will be determined to be negative.
+    lastA = None
+    lastB = None
+    for currentIndex in range(0, posIndex):
+        # print("A:", nums[currentIndex])
+        if nums[currentIndex] == lastA:
+            # print("skip")
+            continue
+        # Search for B values starting at what may be valid.
+        lastB = None
+        for b in range(len(nums) - 1, currentIndex + 1, -1):
+            # print("  B:", nums[b])
+            # If the same b-value as before, skip.
+            if nums[b] == lastB:
+                # print("  skip")
+                continue
+            lastB = nums[b]
+            # Don't look for B+C's that would be higher than possible.
+            if nums[currentIndex] + nums[b] + nums[b] > 0:
+                continue
+            # Don't look for C's where A+B is out of range of the set.
+            if abs(nums[currentIndex] + nums[b]) > highestNumber:
+                break
+            # If A and B sum to a negative.
+            if nums[currentIndex] + nums[b] < 0:
+                start = None
+                # Have C try to start at positive values.
+                if hasZero == True:
+                    start = posIndex + 1
                 else:
-                    b += 1
-                if nums[c] == nums[c-1]:
-                    c -= 2
-                else:
-                    c -= 1
-            elif nums[a] + nums[b] + nums[c] < 0:
-                b += 1
-            elif nums[a] + nums[b] + nums[c] > 0:
-                c -= 1
-        # Iterate lowest-most, skipping over duplicates.
-        if nums.count(nums[a]) == 2:
-            a += 2
-        else:
-            a += 1
-    # Return the full list of found pairs.
+                    start = posIndex
+                # Have C-index always be after B-index, avoid duplicates.
+                if nums[b] > 0:
+                    start = b + 1
+                # Looping for C value.
+                testCValue = None
+                end = len(nums) - 1
+                # Binary search for C values.
+                while True:
+                    c = (start + end) // 2
+                    # print("    A:", nums[currentIndex], " B:", nums[b],
+                    #       " A+B: ", nums[currentIndex]+ nums[b])
+                    # print("    C:", c, " Value:", nums[c])
+                    # print("      Start:", start, " - End:", end)
+                    # If the binary search window is 2 value wide, check both.
+                    if (end - start) <= 1:
+                        # print("TEST")
+                        if nums[currentIndex] + nums[b] + nums[start] == 0:
+                            # print("    Combo: ", nums[currentIndex], " + ",
+                            #        nums[b], " + ", nums[start])
+                            tempNums = [nums[currentIndex], nums[b],
+                                        nums[start]]
+                            newNums.append(tempNums)
+                            tempNums = []
+                        if nums[currentIndex] + nums[b] + nums[end] == 0:
+                            # print("    Combo: ", nums[currentIndex], " + ",
+                            #        nums[b], " + ", nums[end])
+                            tempNums = [nums[currentIndex], nums[b], nums[end]]
+                            newNums.append(tempNums)
+                            tempNums = []
+                        break
+                    if nums[currentIndex] + nums[b] + nums[c] < 0:
+                        start = c
+                        continue
+                    if nums[currentIndex] + nums[b] + nums[c] > 0:
+                        end = c
+                        continue
+                    if nums[currentIndex] + nums[b] + nums[c] == 0:
+                        # print("    Combo: ", nums[currentIndex], " + ",
+                        #        nums[b], " + ", nums[c])
+                        tempNums = [nums[currentIndex], nums[b], nums[c]]
+                        newNums.append(tempNums)
+                        tempNums = []
+                        break
+            if nums[currentIndex] + nums[b] >= 0:
+                break
+        lastA = nums[currentIndex]
     return newNums
 
 print("Result: ", threeSum(testList))
