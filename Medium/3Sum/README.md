@@ -2,7 +2,7 @@
 
 **Description:**
 
-Given an array `nums` of *n* integers, are there elements a, b, c in `nums` such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero. The solution set must not contain duplicate triplets. Solution written in Python 3.8.5.
+Given an array `nums` of *n* integers, are there elements a, b, c in `nums` such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero. The solution set must not contain duplicate triplets.
 
 **Example:**
 ```
@@ -14,6 +14,12 @@ A solution set is:
   [-1, -1, 2]
 ]
 ```
+
+**To Run:**
+
+To run this program, make sure you have Python 3. This solution is written in Python 3.8.5. Navigate to the file `3Sum.py` and run with Python. The test case to run can be chosen within the program.
+
+```C:\>python 3Sum.py```
 
 ## Overview
 
@@ -113,7 +119,7 @@ Output: [ [-10, 4, 6], [-8, -1, 9], [-6, -3, 9], [-6, -2, 8], [-5, -4, 9],
 ```
 
 **Case 11:**
-A set of 3000 integers between -100,000 and 100,000. Output is 16,410 results.
+A set of [3000 integers](https://github.com/bmmurthum/LeetCode-Problems/blob/master/Medium/3Sum/largeTestCase.txt) between -100,000 and 100,000. Output is [16,258 results](https://github.com/bmmurthum/LeetCode-Problems/blob/master/Medium/3Sum/largeTestCaseResults.txt).
 ```
 Input: [82597,-9243,62390,83030,-97960,-26521,-61011...]
 Output: [[-99927, 2246, 97681], [-99927, 12687, 87240], [-99927, 14861, 85066], .. [-1483, -1343, 2826], [-1119, -90, 1209] ]
