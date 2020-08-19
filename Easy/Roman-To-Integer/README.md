@@ -2,7 +2,7 @@
 
 **Description:**
 
-Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+[Roman numerals](https://en.wikipedia.org/wiki/Roman_numerals) are represented by seven different symbols: I, V, X, L, C, D and M.
 
 ```
 Symbol        Value
@@ -34,14 +34,61 @@ Explanation: L = 50, V= 5, III = 3.
 
 ## Overview
 
+This problem, focused on processing a string, doesn't call for eyes to parallel-processing, reducing memory usage, or reducing process time. Those would be worthy efforts, but not my desire here. I aimed for a goal of ease in readability and a large set of test-cases, with a partnered testing function to iterate through all the test-cases.
+
+My solution first translates the string of given characters to their respective numbers, putting them into a list. This allows for a readable and bug-viewable version of code that made for a smooth process of writing the logic. Then, the list is iterated through while looking to both the current value and the next value. This allowed the handling of special cases such as **IX** giving  **9** and **CD** giving **400**. In iteration, if a special case is not found, we simply add the current letter-value to the total and iterate forward. If a special case is found, we add that special value to the total, then iterate forward two spaces. Once the iteration is at the last value, or beyond it, the loop exits and the program ends.
+
 ## Reflections
+
+For this program I wanted to first have a grasp on the system of roman numerals to see if I could see any patterns that may be good for the logic of the algorithms. I used [Math Is Fun](https://www.mathsisfun.com/roman-numerals.html) to explore logic and generate test cases. Ultimately, I looked to (LeetCode's)[https://leetcode.com/problems/roman-to-integer/] description as if it were the final given code requirements to satisfy. The scope of testing was to directly answer LeetCode's given scope.
 
 ## Further Inquiry
 
+1. I'm curious if there's an acceptance of badly written Roman numerals. **IIX** being 8 would be a bad case. I would be interested in writing a validity checker, then writing code that would solve it anyway. It could be that there is multiple solutions to a string.
+2. Another further exploration would be seeing how it is used in the current and old world. Is it entirely uncommon to find larger strings? Is it used in math? Should I write curious math algorithms?
+3. Certainly, going further in the range of numbers allowed would be another step.
+4. Putting some effort toward less memory-usage, or faster process-time would be an exercise.
+
 ## Test Cases
 
-**Case 1:**
+**Case 1:** Handles one-character strings.
+```
+Input: "X"
+Output: 10
+```
 
-**Case 2:**
+**Case 2:** Accepts lower-case letters.
+```
+Input: "iii"
+Output: 3
+```
 
-**Case 3:**
+**Case 3:** A LeetCode example test-case.
+```
+Input: "MCMXCIV"
+Output: 1994
+```
+
+**Case 4:** All addition.
+```
+Input: "CLXVIII"
+Output: 168
+```
+
+**Case 5:** Two cases of subtraction.
+```
+Input: "CCCXCIX"
+Output: 399
+```
+
+**Case 6:** A near-edge case. 11-character string.
+```
+Input: "MMMCMXCVIII"
+Output: 3998
+```
+
+**Case 6:** An edge of scope test case.
+```
+Input: "MMMCMXCIX"
+Output: 3999
+```

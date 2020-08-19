@@ -15,6 +15,7 @@
 #   nested loop. To view the movement of the indexes, there is a comment that
 #   holds a viewable output.
 
+# Allows for use of lists.
 from typing import List
 
 # Variety of test cases.
