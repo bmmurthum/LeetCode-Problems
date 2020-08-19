@@ -36,11 +36,83 @@ Explanation: L = 50, V= 5, III = 3.
 
 This problem, focused on processing a string, doesn't call for eyes to parallel-processing, reducing memory usage, or reducing process time. Those would be worthy efforts, but not my desire here. I aimed for a goal of ease in readability and a large set of test-cases, with a partnered testing function to iterate through all the test-cases.
 
-My solution first translates the string of given characters to their respective numbers, putting them into a list. This allows for a readable and bug-viewable version of code that made for a smooth process of writing the logic. Then, the list is iterated through while looking to both the current value and the next value. This allowed the handling of special cases such as **IX** giving  **9** and **CD** giving **400**. In iteration, if a special case is not found, we simply add the current letter-value to the total and iterate forward. If a special case is found, we add that special value to the total, then iterate forward two spaces. Once the iteration is at the last value, or beyond it, the loop exits and the program ends.
+My solution **(1)** translates the string of given characters to their respective numbers, putting them into a list. This allows for a readable and bug-viewable version of code that made for a smooth process of writing the logic. Then, **(2)**, the list is iterated through while looking to both the current value and the next value. This allowed the handling of special cases such as **IX** giving  **9** and **CD** giving **400**. In iteration, if a special case is found, we add that special value to the total, then iterate forward two spaces. If a special case is not found, we simply add the current letter-value to the total and iterate forward. **(3)** Once the iteration is at the last value, or beyond it, the loop exits and the program ends.
+
+## Code Sample
+
+```Python
+def romanToInt(s: str) -> int:
+
+  # A list of the initial letters as their represented numbers.
+  numberList = []
+
+  # Convert the letters in the string to a list of numbers.
+  # For ease of working with logic.
+  for letter in s:
+      letter = letter.upper()
+      if letter == "I":
+          numberList.append(1)
+      elif letter == "V":
+          numberList.append(5)
+      elif letter == "X":
+          numberList.append(10)
+      elif letter == "L":
+          numberList.append(50)
+      elif letter == "C":
+          numberList.append(100)
+      elif letter == "D":
+          numberList.append(500)
+      elif letter == "M":
+          numberList.append(1000)
+  
+  sum = 0
+  currentIndex = 0
+  length = len(numberList)
+  while True:
+      # If done iterating, exit.
+      if currentIndex >= length:
+          break
+
+      # If at last value in the list.
+      if currentIndex == length - 1:
+          sum += numberList[currentIndex]
+          break
+
+      # Set iterating values.
+      currentValue = numberList[currentIndex]
+      nextValue = numberList[currentIndex + 1]
+
+      # Unique cases of substraction.
+      if currentValue == 1 and nextValue == 5:
+          sum += 4
+          currentIndex += 2
+      elif currentValue == 1 and nextValue == 10:
+          sum += 9
+          currentIndex += 2
+      elif currentValue == 10 and nextValue == 50:
+          sum += 40
+          currentIndex += 2
+      elif currentValue == 10 and nextValue == 100:
+          sum += 90
+          currentIndex += 2
+      elif currentValue == 100 and nextValue == 500:
+          sum += 400
+          currentIndex += 2
+      elif currentValue == 100 and nextValue == 1000:
+          sum += 900
+          currentIndex += 2
+      # All other cases are simple addition to the total.
+      else:
+          sum += currentValue
+          currentIndex += 1
+            
+  # Return the total.
+  return sum
+```
 
 ## Reflections
 
-For this program I wanted to first have a grasp on the system of roman numerals to see if I could see any patterns that may be good for the logic of the algorithms. I used [Math Is Fun](https://www.mathsisfun.com/roman-numerals.html) to explore logic and generate test cases. Ultimately, I looked to (LeetCode's)[https://leetcode.com/problems/roman-to-integer/] description as if it were the final given code requirements to satisfy. The scope of testing was to directly answer LeetCode's given scope.
+For this program I wanted to first have a grasp on the system of roman numerals to see if I could see any patterns that may be good for the logic of the algorithms. I used [Math Is Fun](https://www.mathsisfun.com/roman-numerals.html) to explore logic and generate test cases. Ultimately, I looked to [LeetCode's](https://leetcode.com/problems/roman-to-integer/) description as if it were the final given code requirements to satisfy. The scope of testing was to directly answer LeetCode's given scope.
 
 ## Further Inquiry
 
