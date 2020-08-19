@@ -32,6 +32,12 @@ Output: 58
 Explanation: L = 50, V= 5, III = 3.
 ```
 
+**To Run:**
+
+To run this program, make sure you have Python 3. The solution is written in Python 3.8.5. Navigate to the file `RomanToIny.py` and run with Python. Running the program as it is provided [here](https://github.com/bmmurthum/LeetCode-Problems/blob/master/Easy/Roman-To-Integer/RomanToInt.py) runs the solution algorithm through 65 test cases. You're welcome to add your own test cases to the initial list. Failed tests output a failure message.
+
+```$ python RomanToInt.py```
+
 ## Overview
 
 This problem, focused on processing a string, doesn't call for eyes to parallel-processing, reducing memory usage, or reducing process time. Those would be worthy efforts, but not my desire here. I aimed for a goal of ease in readability and a large set of test-cases, with a partnered testing function to iterate through all the test-cases.
