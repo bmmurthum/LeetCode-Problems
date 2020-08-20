@@ -1,6 +1,6 @@
 # LeetCode Problems
 
-The following are a list of solutions to practice problems provided by [LeetCode.com](https://leetcode.com/). Where applicable, I will explore my choice of solution design in a `README.md` for the sake of integrity and clarity. The first link in the table will be to the folder in this repository with the README and the second link to the LeetCode hosted problem.
+The following are a list of solutions to practice problems provided by [LeetCode.com](https://leetcode.com/). Where applicable, I will explore my choice of solution design in a `README.md` for the sake of integrity and clarity. The first link in the table will be to the folder in this repository and the second link to the LeetCode hosted problem.
 
 ## List of Problems by Date
 
@@ -12,3 +12,4 @@ The following are a list of solutions to practice problems provided by [LeetCode
 |3| Longest Substring | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Longest-Substring-Without-Repeating-Characters) | Medium | Aug, 2020 | [Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 |15| 3Sum | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/3Sum) | Medium | Aug, 2020 | [Link](https://leetcode.com/problems/3sum/)
 |13| Roman to Integer | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Roman-To-Integer) | Easy | Aug, 2020 | [Link](https://leetcode.com/problems/roman-to-integer/)
+|42| Trapping Rain Water | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Hard/Trapping-Rain-Water) | Hard | Aug, 2020 | [Link](https://leetcode.com/problems/trapping-rain-water/)
