@@ -19,7 +19,7 @@ A solution set is:
 
 To run this program, make sure you have Python 3. This solution is written in Python 3.8.5. Navigate to the file `3Sum.py` and run with Python. The test case to run can be chosen within the program.
 
-```C:\>python 3Sum.py```
+```$ python 3Sum.py```
 
 ## Overview
 
