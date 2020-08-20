@@ -34,7 +34,7 @@ Explanation: L = 50, V= 5, III = 3.
 
 **To Run:**
 
-To run this program, make sure you have Python 3. The solution is written in Python 3.8.5. Navigate to the file `RomanToIny.py` and run with Python. Running the program as it is provided [here](https://github.com/bmmurthum/LeetCode-Problems/blob/master/Easy/Roman-To-Integer/RomanToInt.py) runs the solution algorithm through 65 test cases. You're welcome to add your own test cases to the initial list. Failed tests output a failure message.
+To run this program, make sure you have Python 3. The solution is written in Python 3.8.5. Navigate to the file `RomanToInt.py` and run with Python. Running the program as it is provided [here](https://github.com/bmmurthum/LeetCode-Problems/blob/master/Easy/Roman-To-Integer/RomanToInt.py) runs the solution algorithm through 65 test cases. You're welcome to add your own test cases to the initial list. Failed tests output a failure message.
 
 ```$ python RomanToInt.py```
 
@@ -70,7 +70,7 @@ def romanToInt(s: str) -> int:
           numberList.append(500)
       elif letter == "M":
           numberList.append(1000)
-  
+
   sum = 0
   currentIndex = 0
   length = len(numberList)
@@ -111,7 +111,7 @@ def romanToInt(s: str) -> int:
       else:
           sum += currentValue
           currentIndex += 1
-            
+
   # Return the total.
   return sum
 ```

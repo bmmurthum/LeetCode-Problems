@@ -10,6 +10,12 @@ Input: [0,1,0,2,1,0,1,3,2,1,2,1]
 Output: 6
 ```
 
+**To Run:**
+
+To run this program, make sure you have Python 3. The solution is written in Python 3.8.5. Navigate to the file `trappingRainWater.py` and run with Python. Running the program as it is provided [here](https://github.com/bmmurthum/LeetCode-Problems/blob/master/Hard/Trapping-Rain-Water/trappingRainWater.py) runs the solution algorithm through many test cases. You're welcome to add your own test cases to the initial list. Failed tests output a failure message.
+
+`$ python trappingRainWater.py`
+
 ## Overview
 
 My solution means to sweep from the left finding water as possible, then finding the max value and most-right next-max values within the list. This allows for a sweep from the right going up to that next-max value, which should be a scan over the entire map. This plan means to only iterate through the list four times total, (1) as from the left, (2) as sweeping as finding water values backward, (3) as from the right, then (4) as finding water values again.
@@ -21,6 +27,7 @@ There was lots of testing integrated from the beginning. I made sure to draw out
 ## Further Inquiry
 
 - Having a JavaScript version of this solution with generated displays would be very approachable for a viewer.
+- Writing a program that fills a display of the water spaces would be nice. Another challenge might be "find the squares with water in them," rather than "how many water spaces."
 
 ## Test Cases
 
