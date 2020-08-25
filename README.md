@@ -2,6 +2,8 @@
 
 The following are a list of solutions to practice problems provided by [LeetCode.com](https://leetcode.com/). Where applicable, I will explore my choice of solution design in a `README.md` for the sake of integrity and clarity. The first link in the table will be to the folder in this repository and the second link to the LeetCode hosted problem.
 
+- [My Profile](https://leetcode.com/bmmurthum/)
+
 ## List of Problems by Date
 
 | # | LeetCode Title | My Solution | Difficulty | Date | LeetCode Link |
@@ -13,3 +15,4 @@ The following are a list of solutions to practice problems provided by [LeetCode
 |15| 3Sum | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/3Sum) | Medium | Aug, 2020 | [Link](https://leetcode.com/problems/3sum/)
 |13| Roman to Integer | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Roman-To-Integer) | Easy | Aug, 2020 | [Link](https://leetcode.com/problems/roman-to-integer/)
 |42| Trapping Rain Water | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Hard/Trapping-Rain-Water) | Hard | Aug, 2020 | [Link](https://leetcode.com/problems/trapping-rain-water/)
+|279| Perfect Squares | [Java](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/perfect-squares) | Hard | Aug, 2020 | [Link](https://leetcode.com/problems/perfect-squares/)

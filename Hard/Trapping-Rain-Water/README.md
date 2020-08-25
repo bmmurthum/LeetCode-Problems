@@ -18,16 +18,25 @@ To run this program, make sure you have Python 3. The solution is written in Pyt
 
 ## Overview
 
-My solution means to sweep from the left finding water as possible, then finding the max value and most-right next-max values within the list. This allows for a sweep from the right going up to that next-max value, which should be a scan over the entire map. This plan means to only iterate through the list four times total, (1) as from the left, (2) as sweeping as finding water values backward, (3) as from the right, then (4) as finding water values again.
+My solution means to sweep from the left finding water as possible, then finding the max value and most-right next-max values within the list. This allows for a sweep from the right going up to that next-max value, which should be a scan over the entire map. This plan means to only iterate through the list in four pieces total, less than four full runs of the list.
+1. From the left in totality, finding a max peak and second highest peak.
+2. Sweeping backward to find water values within the first iteration.
+3. From the right to the point of the second-highest peak.
+4. Sweeping backward within the (3) iteration, finding water values.
 
-There was lots of testing integrated from the beginning. I made sure to draw out a variety of odd cases on paper and find their solution so that the testing function can perform well.
+There was lots of testing integrated from the beginning. I made sure to draw out a variety of odd cases on paper and find their solution so that the testing function can perform well. In the end, I drew out 22 cases to run the program through.
 
 ## Reflections
+
+On this problem, I made sure to draw out several odd cases for ideation of a workable function. This worked a couple first thoughts out of the running. It also gave space to think about a most efficient cycle of iteration.
+
+LeetCode reports that my program's runtime is faster than 21% of submissions, which is nothing to brag about. Looking at the graph of submissions, mine is right at the slower end of the bell curve. Nothing embarrassing.
 
 ## Further Inquiry
 
 - Having a JavaScript version of this solution with generated displays would be very approachable for a viewer.
 - Writing a program that fills a display of the water spaces would be nice. Another challenge might be "find the squares with water in them," rather than "how many water spaces."
+- Further competing with the percentiles of runtime speed submissions.
 
 ## Test Cases
 

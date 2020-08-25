@@ -31,6 +31,8 @@ testCases = [
     [[2,0,0,2], 4],                     # Simple bowl
     [[4,1,1,4], 6],                     # Simple bowl
     [[0,1,0,0,1], 2],                   # Outside bowl doesn't hold anything
+    [[2,3], 0],                         # Two-wide cannot hold anything
+    [[1,1,1], 0],                       # Flat surface
     [[1,0,0,3,0,0,1,2,1,0,2], 10],      # Various peaks and valleys
     [[3,1,5,2,1,3,1,0,1,0,4], 22],
     [[3,0,0,3,0,2], 8],
@@ -38,8 +40,16 @@ testCases = [
     [[1,0,3,1,0,1,2,1,0,2,0,1], 9],
     [[1,0,4,4,0,4,0,0,0,1,0,2,0,1], 15],
     [[2,0,4,4,0,4,0,0,1,0,2,3,1,0,2,0,1], 22],
-    [[2,3], 0],                         # Two-wide cannot hold anything
-    [[1,1,1], 0]                        # Flat surface
+    [[0,1,0,1,0,1,0,1,0,1,0,1], 5],
+    [[0,1,0,2,0,1,0,2,0,1,0,1,0,1], 9],
+    [[0,0,0,0,0,0,1,0,0,0,0,0,0,1], 6],
+    [[1,0,0,0,0,0,0,0,1,0,0], 7],
+    [[1,0,2,0,3,0,4,0,3,0,2,0,1], 12],
+    [[2,2,0,0,1,0,2,2,3], 7],
+    [[4,0,3,0,2,2,0,3,0,4], 22],
+    [[4,0,3,0,2,0,5,0,2,0,3,0,4], 30],
+    [[2,0,1,3,0,2,2,0,4,0,3,2,0,2,3,0,1,0,1,0,5,0,3,2,2,3,0,1,0,1,0,0,0,0,0,1,0,
+        ], 55],
 ]
 
 
@@ -70,8 +80,14 @@ def trap(height: List[int]) -> int:
             nextMaxValue = 0
         elif  height[currentIndex] >= currentMaxValue and hasDropped == True:
             liquidHeld += min(height[currentIndex], currentMaxValue) * (currentIndex - currentMaxIndex - 1)
-            # TODO Substract the height of values between.
+            # Substract the height of values between.
+            for x in range(currentMaxIndex + 1, currentIndex):
+                liquidHeld -= height[x]
             hasDropped = False
+            currentMaxIndex = currentIndex
+            currentMaxValue = height[currentIndex]
+            nextMaxIndex = currentIndex + 1
+            nextMaxValue = 0
         elif height[currentIndex] < currentMaxValue:
             hasDropped = True
         # Finding the next highest value for the iteration backward later.
@@ -87,11 +103,32 @@ def trap(height: List[int]) -> int:
         nextMaxIndex = listLength - 1
 
     # Add liquid from max to right-most max.
-    liquidHeld += min(height[currentMaxIndex], height[nextMaxIndex]) * (nextMaxIndex - currentMaxIndex - 1)
-
+    if nextMaxValue < currentMaxValue and nextMaxValue != 0:
+        liquidHeld += min(height[currentMaxIndex], height[nextMaxIndex]) * (nextMaxIndex - currentMaxIndex - 1)
+        for x in range(currentMaxIndex + 1, nextMaxIndex):
+            liquidHeld -= height[x]
 
     # Iterate left to the right-most max value, filling as going.
-    # TODO
+    currentMaxIndex = len(height) - 1
+    currentIndex = len(height) - 1
+    currentMaxValue = 0
+    hasDropped = False
+    while currentIndex >= nextMaxIndex:
+        if height[currentIndex] >= currentMaxValue and hasDropped == False:
+            currentMaxIndex = currentIndex
+            currentMaxValue = height[currentIndex]
+        elif  height[currentIndex] >= currentMaxValue and hasDropped == True:
+            liquidHeld += min(height[currentIndex], currentMaxValue) * (currentMaxIndex - currentIndex - 1)
+            # Substract the height of values between.
+            for x in range(currentIndex + 1, currentMaxIndex):
+                liquidHeld -= height[x]
+            hasDropped = False
+            currentMaxIndex = currentIndex
+            currentMaxValue = height[currentIndex]
+        elif height[currentIndex] < currentMaxValue:
+            hasDropped = True
+        # Decrement Current Index
+        currentIndex -= 1
 
     return liquidHeld
 
@@ -106,6 +143,7 @@ def testFunction(testList):
                   "should be: " + str(test[1]))
             None
         else:
+            # print("SUCCESS:", test[0], "== " + str(trap(test[0])))
             numberOfSuccesses += 1
     percentSuccess = math.floor((numberOfSuccesses / numberOfTests) * 100)
     print(str(percentSuccess) + "% Success " + str(numberOfSuccesses) + \
