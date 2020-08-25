@@ -15,4 +15,4 @@ The following are a list of solutions to practice problems provided by [LeetCode
 |15| 3Sum | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/3Sum) | Medium | Aug, 2020 | [Link](https://leetcode.com/problems/3sum/)
 |13| Roman to Integer | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Roman-To-Integer) | Easy | Aug, 2020 | [Link](https://leetcode.com/problems/roman-to-integer/)
 |42| Trapping Rain Water | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Hard/Trapping-Rain-Water) | Hard | Aug, 2020 | [Link](https://leetcode.com/problems/trapping-rain-water/)
-|279| Perfect Squares | [Java](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/perfect-squares) | Hard | Aug, 2020 | [Link](https://leetcode.com/problems/perfect-squares/)
+|279| Perfect Squares | [Java](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Perfect-Squares) | Hard | Aug, 2020 | [Link](https://leetcode.com/problems/perfect-squares/)

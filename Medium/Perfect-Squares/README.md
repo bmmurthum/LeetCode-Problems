@@ -13,11 +13,12 @@ Explanation: 13 = 4 + 9.
 
 **To Run:**
 
-To run this program, make sure you have Java. The solution is written in Java 1.0.8. You may have to confirm that Java is included in your `PATH` variables. Navigate to the directory containing the file `perfectSquares.java` and compile with the command `$ javac perfectSquares.java`.
+To run this program, make sure you have Java. The solution is written in Java 1.0.8. You may have to confirm that Java is included in your `PATH` variables. Navigate to the directory containing the file `perfectSquares.java`.
 
-Run the program by calling Java within this directory on the main class:
+- Compile the program: `$ javac perfectSquares.java`
+- Run the program with Java with: `$ java perfectSquares`
 
-`$ java perfectSquares`
+Running this program as given runs the solution-algorithm through 40 given test cases and reports percentage of success.
 
 ## Overview
 
