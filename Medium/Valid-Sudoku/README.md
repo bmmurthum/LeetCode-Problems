@@ -37,7 +37,7 @@ For the sub-box check we did a nested loop of `0 -> 2` in which these numbers ar
 
 ## Test Cases
 
-We ran [unit tests](https://leetcode.com/problems/merge-sorted-array/) on this problem for cases:
+We ran [unit tests](https://github.com/bmmurthum/LeetCode-Problems/blob/master/Medium/Valid-Sudoku/test.py) on this problem for cases:
 - Good solution
 - Bad solution by row
 - Bad solution by column
