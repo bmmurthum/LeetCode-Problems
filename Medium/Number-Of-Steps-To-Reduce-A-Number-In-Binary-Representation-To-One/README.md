@@ -1,4 +1,4 @@
-# Number of Steps to Reduce a number in Binary Representation to One
+# Number of Steps to Reduce a Number in Binary Representation to One
 
 **Description:**
 
@@ -24,9 +24,9 @@ Output: 6
 
 My solution checks the last character of the given string for whether it's a `1` or a `0`. If `1`, we know that it's odd, so we're instructed to add `1` to the total. If `0`, we divide by `2`. We iterate this with a counter to find our desired output. When the string is `1`, we stop the counter.
 
-The division by two can be represented by a right-shift of the binary number.
+The division by two can be represented by a right-shift of the binary number. This is what we opted for, in a string environment.
 
-Adding one to the binary is a matter of flipping ones until we happen upon a zero, or come to the beginning of the string.
+Adding one to the binary was a matter of flipping ones from the right until we happen upon a zero, or come to the beginning of the string.
 
 ## Reflections
 
@@ -35,7 +35,7 @@ Replacement of a character in a string in Python is NOT `s[2] = "0"`. I'm surpri
 My solution for division by two does a split action on the string with `s[:lastPos]`. A simpler version I saw was `s.pop()`. Perfect.
 
 Looking at other solutions to this question, I saw some conversions of the string to integer to do the calculations as an integer. `n = int(s,2)` This solution avoids any observation of the binary logic and string manipulation. Because the requirement of the problem doesn't call for string output, this may be seen as a more optimal solution.
-- These solution tend to 8-12 lines long compared to by 35.
+- These solutions tend to be 8-12 lines long compared to my 35.
 - These cases avoid multiple functions, less variables, less string handling, and avoid the iteration of the string logic that I did.
 
 ## Test Cases
