@@ -23,7 +23,7 @@ Unique cases of empty lists are handled before any iterations.
 
 We also handle cases of one of the list pointers coming to the beginning of its list before the other.
 
-We implemented unit-tests for this problem using a [second file](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) with `import unittest`. Tests were made for:
+We implemented unit-tests for this problem using a [second file](https://github.com/bmmurthum/LeetCode-Problems/blob/master/Easy/Merge-Sorted-Array/test.py) with `import unittest`. Tests were made for:
 - Varieties of empty lists
 - One list longer than other
 - Values of one list encapsulating the other
