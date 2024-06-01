@@ -50,7 +50,7 @@ def wordPattern(self, pattern: str, s: str) -> bool:
 
 ## Test Cases
 
-We implemented unit-tests for this problem using a [second file](https://github.com/bmmurthum/LeetCode-Problems/blob/master/Easy/Merge-Sorted-Array/test.py) with `import unittest`. Tests were made for:
+We implemented unit-tests for this problem using a [second file](https://github.com/bmmurthum/LeetCode-Problems/blob/master/Easy/Word-Pattern/test.py) with `import unittest`. Tests were made for:
 - Correct simple case
 - Incorrect simple case
 - Incorrect case, with all single letter pattern
