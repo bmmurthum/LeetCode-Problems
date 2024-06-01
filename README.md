@@ -21,4 +21,4 @@ The following are a list of solutions to practice problems provided by [LeetCode
 |1404| Number of Steps to Reduce a Number in Binary Representation to One | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Number-Of-Steps-To-Reduce-A-Number-In-Binary-Representation-To-One) | Medium | May, 2024 | [Link](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/)
 |88| Merge Sorted Array | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Merge-Sorted-Array) | Easy | May, 2024 | [Link](https://leetcode.com/problems/merge-sorted-array/)
 |36| Valid Sudoku | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Valid-Sudoku) | Medium | May, 2024 | [Link](https://leetcode.com/problems/valid-sudoku/)
-|290| Word Pattern | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Word-Pattern) | Medium | May, 2024 | [Link](https://leetcode.com/problems/word-pattern/)
+|290| Word Pattern | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Word-Pattern) | Easy | May, 2024 | [Link](https://leetcode.com/problems/word-pattern/)
