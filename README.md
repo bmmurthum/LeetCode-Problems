@@ -23,3 +23,4 @@ The following are a list of solutions to practice problems provided by [LeetCode
 |36| Valid Sudoku | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Valid-Sudoku) | Medium | May, 2024 | [Link](https://leetcode.com/problems/valid-sudoku/)
 |290| Word Pattern | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Word-Pattern) | Easy | May, 2024 | [Link](https://leetcode.com/problems/word-pattern/)
 |20| Valid Parentheses | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Valid-Parentheses) | Easy | June, 2024 | [Link](https://leetcode.com/problems/valid-parentheses/)
+|71| Simplify Path | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Simplify-Path) | Medium | June, 2024 | [Link](https://leetcode.com/problems/simplify-path/)
