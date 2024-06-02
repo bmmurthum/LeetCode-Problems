@@ -464,6 +464,8 @@ Output:
 | 2  |
 | 4  |
 +----+
+```
+
 
 ```mySQL
 SELECT x.id
