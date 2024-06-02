@@ -420,10 +420,53 @@ Output:
 ```
 
 ```mySQL
+-- SELECT v.customer_id, t.transaction_id,v.visit_id, t.visit_id, t.amount
 SELECT v.customer_id, COUNT(v.visit_id) AS count_no_trans
 From Visits v
 LEFT JOIN Transactions t
 ON v.visit_id = t.visit_id
-WHERE t.amount IS NULL
+WHERE t.visit_id IS NULL
 GROUP BY v.customer_id
+```
+
+### Rising Temperature [Link](https://leetcode.com/problems/rising-temperature/)
+
+Write a solution to find all dates' `id` with higher temperatures compared to its previous dates (yesterday). Return the result table in any order.
+
+```
+Weather:
++---------------+---------+
+| Column Name   | Type    |
++---------------+---------+
+| id            | int     |
+| recordDate    | date    |
+| temperature   | int     |
++---------------+---------+
+id is the column with unique values for this table.
+There are no different rows with the same recordDate.
+This table contains information about the temperature on a certain day.
+```
+
+```
+Weather table:
++----+------------+-------------+
+| id | recordDate | temperature |
++----+------------+-------------+
+| 1  | 2015-01-01 | 10          |
+| 2  | 2015-01-02 | 25          |
+| 3  | 2015-01-03 | 20          |
+| 4  | 2015-01-04 | 30          |
++----+------------+-------------+
+Output:
++----+
+| id |
++----+
+| 2  |
+| 4  |
++----+
+
+```mySQL
+SELECT x.id
+FROM Weather x, Weather y
+WHERE DATEDIFF(x.recordDate,y.recordDate) = 1 AND x.temperature > y.temperature
 ```

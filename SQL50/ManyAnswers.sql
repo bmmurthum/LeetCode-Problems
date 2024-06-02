@@ -67,9 +67,23 @@ Write a solution to find the IDs of the users who visited without making any tra
 
 */
 
+-- SELECT v.customer_id, t.transaction_id,v.visit_id, t.visit_id, t.amount
 SELECT v.customer_id, COUNT(v.visit_id) AS count_no_trans
 From Visits v
 LEFT JOIN Transactions t
 ON v.visit_id = t.visit_id
-WHERE t.amount IS NULL
+WHERE t.visit_id IS NULL
 GROUP BY v.customer_id
+
+
+/*
+Leetcode 197 - Rising Temperature
+https://leetcode.com/problems/rising-temperature/
+
+Write a solution to fine all dates' id with higher temperatures compared to its previous dates (yesterday). Return the result in any order.
+
+*/
+
+SELECT x.id
+FROM Weather x, Weather y
+WHERE DATEDIFF(x.recordDate,y.recordDate)=1 AND x.temperature>y.temperature
