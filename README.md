@@ -25,3 +25,5 @@ The following are a list of solutions to practice problems provided by [LeetCode
 |290| Word Pattern | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Word-Pattern) | Easy | May, 2024 | [Link](https://leetcode.com/problems/word-pattern/)
 |20| Valid Parentheses | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Valid-Parentheses) | Easy | June, 2024 | [Link](https://leetcode.com/problems/valid-parentheses/)
 |71| Simplify Path | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Simplify-Path) | Medium | June, 2024 | [Link](https://leetcode.com/problems/simplify-path/)
+|242| Valid Anagram | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Valid-Anagram) | Easy | June, 2024 | [Link](https://leetcode.com/problems/valid-anagram)
+|49| Group Anagrams | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Group-Anagrams) | Medium | June, 2024 | [Link](https://leetcode.com/problems/group-anagrams)

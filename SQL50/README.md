@@ -466,7 +466,6 @@ Output:
 +----+
 ```
 
-
 ```mySQL
 SELECT x.id
 FROM Weather x, Weather y
