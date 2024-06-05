@@ -27,3 +27,4 @@ The following are a list of solutions to practice problems provided by [LeetCode
 |71| Simplify Path | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Simplify-Path) | Medium | June, 2024 | [Link](https://leetcode.com/problems/simplify-path/)
 |242| Valid Anagram | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Valid-Anagram) | Easy | June, 2024 | [Link](https://leetcode.com/problems/valid-anagram)
 |49| Group Anagrams | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Group-Anagrams) | Medium | June, 2024 | [Link](https://leetcode.com/problems/group-anagrams)
+|155| Min Stack | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Min-Stack) | Medium | June, 2024 | [Link](https://leetcode.com/problems/min-stack)

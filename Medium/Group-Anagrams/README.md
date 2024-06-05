@@ -1,5 +1,4 @@
-# Valid Anagram
-
+# Group Anagrams
 
 **Description:**
 
