@@ -29,3 +29,4 @@ The following are a list of solutions to practice problems provided by [LeetCode
 |49| Group Anagrams | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Group-Anagrams) | Medium | June, 2024 | [Link](https://leetcode.com/problems/group-anagrams)
 |155| Min Stack | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Min-Stack) | Medium | June, 2024 | [Link](https://leetcode.com/problems/min-stack)
 |150| Evaluate Reverse Polish Notation | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Evaluate-Reverse-Polish-Notation) | Medium | June, 2024 | [Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
+|224| Basic Calculator | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Hard/Basic-Calculator) | Hard | June, 2024 | [Link](https://leetcode.com/problems/basic-calculator/)
