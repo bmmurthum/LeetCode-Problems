@@ -80,6 +80,7 @@ I used Python's `timeit` library to isolate the individual functions to run with
 - `removeDuplicates_3()`: 3.935 x 10^-6 sec
 - `removeDuplicates_4()`: 3.439 x 10^-6 sec
 
+**Solution Variations**
 
 Similar to my solution, but without holding a `lastValue` for comparision. It looks like the 8 memory block difference is in that holding `lastValue` variable I used. Some notable time difference, maybe spent in assigning and comparing that value.
 ```python
