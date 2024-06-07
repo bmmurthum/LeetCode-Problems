@@ -4,6 +4,7 @@ The following are a list of solutions to practice problems provided by [LeetCode
 
 - [My LeetCode Profile](https://leetcode.com/bmmurthum/)
 - [SQL Exercises](https://github.com/bmmurthum/LeetCode-Problems/tree/master/SQL50)
+- [Testing](https://github.com/bmmurthum/LeetCode-Problems/blob/master/TESTING.md)
 
 ## List of Problems by Date
 
