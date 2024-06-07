@@ -44,7 +44,7 @@ def removeElement(self, nums: list[int], val: int) -> int:
 
 ## Tests
 
-We implemented [unit-tests](https://github.com/bmmurthum/LeetCode-Problems/blob/master/Easy/Remove-Element/test.py) for this problem with `import unittest`. Tests were made for:
+We implemented [unit-tests](https://github.com/bmmurthum/LeetCode-Problems/blob/master/Easy/Remove-Element/unitTest.py) for this problem with `import unittest`. Tests were made for:
 - Two simple cases
 - An incrementing valued list, our removal at the end
 - An incrementing valued list, our removal at beginning
