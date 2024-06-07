@@ -2,7 +2,7 @@
 
 **Description:**
 
-Given an integer array `nums` and an integer `val`, remove all occurrences of `val` in nums **in-place**. The order of the elements may be changed. Then return the number of elements in `nums` which are not equal to `val`.
+Given an integer array `nums` and an integer `val`, remove all occurrences of `val` in `nums` **in-place**. The order of the elements may be changed. Then return the number of elements in `nums` which are not equal to `val`.
 
 Consider the number of elements in `nums` which are not equal to `val` be `k`, to get accepted, you need to do the following things:
 
@@ -25,7 +25,7 @@ Output: 5, nums = [0,1,4,0,3,_,_,_]
 
 We understand that our returned integer `pnt` is not the only requirment of this method. The given list `nums` is meant to be changed as well. With Python, lists, as a mutable type, are passed to our method by reference and any changes to them will be kept outside of the scope of our method.
 
-In `removeElement` we set up a pointer `pnt` that moves forward as we iterate through the list. When we observe a value that we'd like to keep, we put that value at the position of `pnt`, then increment `pnt`.
+In `removeElement` we set up a pointer `pnt` that moves forward as we iterate through the list. When we observe a value that we'd like to keep, we put that value at the index of `pnt`, then increment `pnt`.
 
 ```python3
 def removeElement(self, nums: list[int], val: int) -> int:
