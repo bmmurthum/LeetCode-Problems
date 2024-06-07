@@ -1,10 +1,10 @@
 # Testing
 
-A run down on testing methods.
+A selection of code coverage and testing methods.
 
 ### Unit Tests
 
-Using Python's `unittest` library we can test a variety of inputs on our methods. For confidence, for quality assurance.
+Using Python's `unittest` library we can test a variety of inputs on our methods. For quality assurance.
 
 ```python
 import unittest
@@ -36,10 +36,13 @@ def app():
 
 # starting the monitoring
 tracemalloc.start()
+
 # function call
 app()
+
 # displaying the memory
 print(tracemalloc.get_traced_memory())
+
 # stopping the library
 tracemalloc.stop()
 ```
@@ -63,6 +66,30 @@ Line #    Mem usage    Increment   Line Contents
 ```
 
 ### Performance
+
+With `timeit` we can isolate a section of code to run hundreds of times to get an idea for run-time differences with alterations.
+
+```python
+import timeit
+numTests = 100
+mycode = '''
+class Solution:
+    def removeDuplicates_1(self, nums: list[int]) -> int:
+        ptr = 1
+        lastValue = nums[0]
+        for i in range(1,len(nums)):
+            if nums[i] != lastValue:
+                nums[ptr] = nums[i]
+                lastValue = nums[i]
+                ptr += 1
+        return ptr
+nums = [0,0,1,1,1,2,2,3,3,4]
+s = Solution()
+v = s.removeDuplicates_1(nums)
+'''
+timePerRun = str(timeit.timeit(stmt=mycode,number=numTests)/numTests)
+print("removeDuplicates():" + timePerRun)
+```
 
 A Stack Overflow [user](https://stackoverflow.com/questions/44677606/how-to-measure-the-speed-of-a-python-function) suggests using `line_profiler` to see a line-by-line diagnostic. 
 
