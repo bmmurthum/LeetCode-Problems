@@ -7,7 +7,6 @@ Given an integer array `nums`, rotate the array to the right by `k` steps, where
 
 **Example:**
 
-The blanks in the output lists are to suggest any value can be there acceptably.
 ```
 Input: nums = [1,2,3,4,5,6,7], k = 3
 Output: [5,6,7,1,2,3,4]
