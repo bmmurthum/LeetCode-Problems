@@ -1,3 +1,6 @@
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint)
+
 # LeetCode Problems
 
 The following are a list of solutions to practice problems provided by [LeetCode.com](https://leetcode.com/). Where applicable, I will explore my choice of solution design in a `README.md` for the sake of integrity and clarity. The first link in the table will be to the folder in this repository and the second link to the LeetCode hosted problem.
