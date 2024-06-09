@@ -4,7 +4,7 @@ A selection of code coverage and testing methods.
 
 ### Unit Tests
 
-Using Python's `unittest` library we can test a variety of inputs on our methods. For quality assurance.
+Using Python's `unittest` library we can test a variety of inputs on our methods for quality assurance. We can use [Visual Studio](https://code.visualstudio.com/docs/python/testing) to automate running these tests.
 
 ```python
 import unittest
@@ -19,6 +19,24 @@ class testing(unittest.TestCase):
     result = s.evalRPN(tokens)
     self.assertEqual(result, correctSolution, 'The result is incorrect.')
 ```
+
+### Code Coverage
+
+Using `coverage.py` we can generate code-coverage reports from the unit-test scripts. [Package Link](https://coverage.readthedocs.io/en/7.5.3/)
+
+`> coverage run unitTest.py` 
+
+```
+> coverage report -m
+Name                      Stmts   Miss  Cover   Missing
+-------------------------------------------------------
+my_program.py                20      4    80%   33-35, 39
+my_other_module.py           56      6    89%   17-23
+-------------------------------------------------------
+TOTAL                        76     10    87%
+```
+
+`> coverage html` Generates an HTML collection to for better visual representation.
 
 ### Memory Tracing
 
@@ -65,7 +83,7 @@ Line #    Mem usage    Increment   Line Contents
      7   21.289 MiB    0.000 MiB       return bar
 ```
 
-### Performance
+### Performance Testing
 
 With `timeit` we can isolate a section of code to run hundreds of times to get an idea for run-time differences with alterations.
 
