@@ -10,6 +10,7 @@ The following are a list of solutions to practice problems provided by [LeetCode
 
 | # | LeetCode Title | My Solution | Difficulty | Date | LeetCode Link |
 |:-:|:---------------|:-----------:|:----------:|:----:|:-------------:|
+|383| Ransom Note | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Ransom-Note) | Easy | June, 2024 | [Link](https://leetcode.com/problems/ransom-note/)
 |189| Rotate Array | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Rotate-Array) | Medium | June, 2024 | [Link](https://leetcode.com/problems/rotate-array/)
 |26| Remove Duplicates from Sorted Array | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Remove-Duplicates-From-Sorted-Array) | Easy | June, 2024 | [Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 |27| Remove Element | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Remove-Element) | Easy | June, 2024 | [Link](https://leetcode.com/problems/remove-element/)
