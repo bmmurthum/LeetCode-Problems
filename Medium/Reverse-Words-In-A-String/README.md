@@ -33,7 +33,7 @@ I made three solutions with slight variation, I'll look at the fastest performin
 - We generate a new string to return from this list
 
 ```python
-def reverseWords_2(self, s: str) -> str:
+def reversewords_2(self, s: str) -> str:
     s = s.strip()
     while "  " in s:
         s = s.replace("  ", " ")
@@ -74,28 +74,28 @@ TOTAL                         39      0   100%
 
 I used `tracemalloc` to look at peak memory block usage during the running of the function with a string of `"     the   sky       is  blue     "`. We compare my three solutions with two other solutions, seen below.
 
-My best solution `reverseWords_3()` uses 25% more memory than the `reverseWords_4()`.
+My best solution `reversewords_3()` uses 25% more memory than the `reversewords_4()`.
 
 Memory blocks used:
 
-- `reverseWords_1()`: 841 blocks
-- `reverseWords_2()`: 833 blocks
-- `reverseWords_3()`: 825 blocks
-- `reverseWords_4()`: 664 blocks
-- `reverseWords_5()`: 992 blocks
+- `reversewords_1()`: 841 blocks
+- `reversewords_2()`: 833 blocks
+- `reversewords_3()`: 825 blocks
+- `reversewords_4()`: 664 blocks
+- `reversewords_5()`: 992 blocks
 
 
 **Process Time Testing**
 
 I used `timeit` to isolate the individual functions to run the input `"     the   sky       is  blue     "`. We compare my three solutions with two others.
 
-My best solution `reverseWords_2()` is 17% slower than the `reverseWords_4()`.
+My best solution `reversewords_2()` is 17% slower than the `reversewords_4()`.
 
-- `reverseWords_1()`: 4.653 x 10^-6 sec
-- `reverseWords_2()`: 4.251 x 10^-6 sec
-- `reverseWords_3()`: 4.536 x 10^-6 sec
-- `reverseWords_4()`: 3.549 x 10^-6 sec
-- `reverseWords_5()`: 4.044 x 10^-6 sec
+- `reversewords_1()`: 4.653 x 10^-6 sec
+- `reversewords_2()`: 4.251 x 10^-6 sec
+- `reversewords_3()`: 4.536 x 10^-6 sec
+- `reversewords_4()`: 3.549 x 10^-6 sec
+- `reversewords_5()`: 4.044 x 10^-6 sec
 
 
 ## Reflections
@@ -111,7 +111,7 @@ This best-performing solution uses a most-naked version of `s.split()` to avoid 
 
 `664 memory blocks` & `3.549 x 10^-6 sec`
 ```python
-def reverseWords_4(self, s: str) -> str:
+def reversewords_4(self, s: str) -> str:
     words = s.split()
     words.reverse()
     return " ".join(words)
@@ -119,7 +119,7 @@ def reverseWords_4(self, s: str) -> str:
 
 `992 memory blocks` & `4.044 x 10^-6 sec`
 ```python
-def reverseWords_5(self, s: str) -> str:
+def reversewords_5(self, s: str) -> str:
         r = s.strip().split(" ")
         r1 = r[::-1]
         r2 = [i for i in r1 if i != ""]
