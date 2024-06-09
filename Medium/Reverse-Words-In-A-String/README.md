@@ -33,6 +33,7 @@ I made three solutions with slight variation, I'll look at the fastest performin
 - We generate a new string to return from this list
 
 ```python
+# My fastest solution
 def reversewords_2(self, s: str) -> str:
     s = s.strip()
     while "  " in s:
@@ -111,6 +112,7 @@ This best-performing solution uses a most-naked version of `s.split()` to avoid 
 
 `664 memory blocks` & `3.549 x 10^-6 sec`
 ```python
+# Someone else's solution
 def reversewords_4(self, s: str) -> str:
     words = s.split()
     words.reverse()
@@ -119,6 +121,7 @@ def reversewords_4(self, s: str) -> str:
 
 `992 memory blocks` & `4.044 x 10^-6 sec`
 ```python
+# Someone else's solution
 def reversewords_5(self, s: str) -> str:
         r = s.strip().split(" ")
         r1 = r[::-1]
