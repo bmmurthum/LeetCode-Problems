@@ -98,7 +98,7 @@ TOTAL                         144     13    91%
 
 I used `tracemalloc` to look at peak memory block usage during the running of the function. We compare my solution with two other solutions, seen below.
 
-My solution `mergetwolists_1()` more memory than was initially given. The other solutions did so, in place?
+My solution `mergetwolists_1()` uses more memory than was initially given. The other solutions did so in-place, it seems.
 
 Memory blocks used:
 
