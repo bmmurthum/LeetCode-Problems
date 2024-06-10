@@ -39,7 +39,7 @@ Output: [0]
 
 ## Overview
 
-My solution recursively builds a new linked-list `temp` to return. It looks at two nodes' values (if not `None`) and makes the value of this `temp` node equal to the lower value node, then makes this `temp` node point to the result of this same function on (1) the `.next` value of the linked-list it took from and (2) the other list it did not.
+My solution recursively builds a new linked-list `temp` to return. It looks at two nodes' values, node `list1` & `list2` (if not `None`), and makes the value `val` of this `temp` node equal to the lower value node, then makes this `temp` node point to the result of this same function with arguments of: (1) the `.next` value of the linked-list it took from and (2) the current "head" of the other list it did not take from.
 
 This ends up returning the head node of a linked-list in order sorted by ascending order. 
 
