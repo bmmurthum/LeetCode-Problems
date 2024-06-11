@@ -13,6 +13,7 @@ The following are a list of solutions to practice problems provided by [LeetCode
 
 | # | LeetCode Title | My Solution | Difficulty | Date | LeetCode Link |
 |:-:|:---------------|:-----------:|:----------:|:----:|:-------------:|
+|125| Valid Palindrome | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Valid-Palindrome) | Easy | June, 2024 | [Link](https://leetcode.com/problems/valid-palindrome/)
 |21| Merge Two Sorted Lists | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Merge-Two-Sorted-Lists) | Easy | June, 2024 | [Link](https://leetcode.com/problems/merge-two-sorted-lists/)
 |151| Reverse Words in a String | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Reverse-Words-In-A-String) | Medium | June, 2024 | [Link](https://leetcode.com/problems/reverse-words-in-a-string/)
 |383| Ransom Note | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Ransom-Note) | Easy | June, 2024 | [Link](https://leetcode.com/problems/ransom-note/)
