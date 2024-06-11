@@ -1,4 +1,4 @@
-# Merge Two Sorted Lists
+# Valid Palindrome
 
 **Description:**
 
@@ -66,7 +66,7 @@ We implemented unit-tests for this problem with `import unittest`. We checked fo
 We received 100% code coverage on `valid_palindrome.py` from the unit test using the `coverage.py` tool.
 
 ```
-> coverage run unitTest.py
+> coverage run unit_test.py
 > coverage report -m 
 Name                  Stmts   Miss  Cover   Missing
 ---------------------------------------------------

@@ -84,7 +84,7 @@ We received 100% code coverage on `merge_two_sorted_lists.py` from the unit test
 The missing unit-test coverage is conditions that were expected to not be met in the tests.
 
 ```
-> coverage run unitTest.py
+> coverage run unit_test.py
 > coverage report -m 
 Name                        Stmts   Miss  Cover   Missing
 ---------------------------------------------------------
