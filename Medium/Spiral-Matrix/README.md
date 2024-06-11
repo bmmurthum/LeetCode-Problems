@@ -51,7 +51,7 @@ Output: [1,2,3]
 
 ## Overview
 
-
+For my solution, we imagine doing a spiral loop around the outside of the matrix to then start at a new position inside that old loop, with smaller dimensions. 
 
 ```python
 # My solution
