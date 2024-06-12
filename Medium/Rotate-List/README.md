@@ -8,6 +8,16 @@ Given the `head` of a linked list, rotate the list to the right by `k` places.
 - `-100 <= Node.val <= 100`
 - `0 <= k <= 2 * 109`
 
+```python
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+class Solution:
+    def rotate_right_1(self, head: ListNode, k: int) -> ListNode:
+        # ...
+```
+
 **Example:**
 
 ```
