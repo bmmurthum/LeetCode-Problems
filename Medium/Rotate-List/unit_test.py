@@ -3,6 +3,8 @@
 import unittest
 from rotate_list import Solution
 
+# pylint: disable=W0622
+
 
 class ListNode:
     """Given class by LeetCode to manipulate linked-links"""

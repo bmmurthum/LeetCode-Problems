@@ -1,5 +1,7 @@
 """ Module to report peak-memory used by method """
 
+# pylint: disable=W0622
+
 import tracemalloc
 
 
@@ -99,6 +101,7 @@ class Solution:
 
     # Someone else's solution
     def find(self, head):
+        """Finds the length of the list and the tail"""
         length = 1
         temp = head
         while temp.next:
@@ -107,6 +110,7 @@ class Solution:
         return (length, temp)
 
     def getNewTail(self, head, idx):
+        """Returns the node of the tail"""
         temp = head
         while idx != 1:
             temp = temp.next
@@ -114,6 +118,7 @@ class Solution:
         return temp
 
     def rotate_right_2(self, head: ListNode, k: int) -> ListNode:
+        """Rotates a linked-list by `k` integers"""
         if not head:
             return head
         length, tail = self.find(head)

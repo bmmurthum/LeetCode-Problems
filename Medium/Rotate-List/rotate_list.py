@@ -4,7 +4,7 @@
 class ListNode:
     """Given class by LeetCode to manipulate linked-links"""
 
-    def __init__(self, val=0, next=None):
+    def __init__(self, val=0, next=None):  # pylint: disable=W0622
         self.val = val
         self.next = next
 
