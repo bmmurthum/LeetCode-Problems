@@ -13,6 +13,7 @@ The following are a list of solutions to practice problems provided by [LeetCode
 
 | # | LeetCode Title | My Solution | Difficulty | Date | LeetCode Link |
 |:-:|:---------------|:-----------:|:----------:|:----:|:-------------:|
+|61| Rotate List | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Rotate-List) | Medium | June, 2024 | [Link](https://leetcode.com/problems/rotate-list/)
 |56| Merge Intervals | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Merge-Intervals) | Medium | June, 2024 | [Link](https://leetcode.com/problems/merge-intervals/)
 |452| Minimum Num of Arrows | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Minimum-Number-Of-Arrows-To-Burst-Balloon) | Medium | June, 2024 | [Link](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)
 |54| Spiral Matrix | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Spiral-Matrix) | Medium | June, 2024 | [Link](https://leetcode.com/problems/spiral-matrix/)
