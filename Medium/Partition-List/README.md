@@ -1,4 +1,4 @@
-# Rotate List
+# Partition List
 
 **Description:**
 
