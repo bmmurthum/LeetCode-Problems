@@ -38,34 +38,34 @@ In loop, while there are balloons left `total_balloons > 0`, we look at our left
 ```python
 # My solution
 def find_min_arrow_shots_1(self, points: list[list[int]]) -> int:
-        total_balloons = len(points)
-        initial_balloons = total_balloons
-        points.sort()
-        arrows_used = 0
+    total_balloons = len(points)
+    initial_balloons = total_balloons
+    points.sort()
+    arrows_used = 0
 
-        l_index = 0 # Left-most balloon index
-        
-        # Considering our current left-most balloon, what others can also be shot?
-        while total_balloons > 0:
-            l_left = points[l_index][0]
-            l_right = points[l_index][1]
-            i = l_index + 1 # Index of the next-also-considered
-            total_balloons -= 1 # Pop our left-most balloon
-            # What balloons after left-most can be shot simultaneously?
-            while i < initial_balloons:
-                cur_left = points[i][0]  # Current balloon
-                cur_right = points[i][1] # Current balloon
-                if cur_left > l_right:
-                    l_index += 1
-                    break
-                if l_left <= cur_right and l_right >= cur_left:
-                    l_right = min(cur_right, l_right)
-                    l_left = max(cur_left, l_left)
-                    total_balloons -= 1 # Pop our current balloon
-                    l_index += 1
-                i += 1
-            arrows_used += 1
-        return arrows_used
+    l_index = 0 # Left-most balloon index
+    
+    # Considering our current left-most balloon, what others can also be shot?
+    while total_balloons > 0:
+        l_left = points[l_index][0]
+        l_right = points[l_index][1]
+        i = l_index + 1 # Index of the next-also-considered
+        total_balloons -= 1 # Pop our left-most balloon
+        # What balloons after left-most can be shot simultaneously?
+        while i < initial_balloons:
+            cur_left = points[i][0]  # Current balloon
+            cur_right = points[i][1] # Current balloon
+            if cur_left > l_right:
+                l_index += 1
+                break
+            if l_left <= cur_right and l_right >= cur_left:
+                l_right = min(cur_right, l_right)
+                l_left = max(cur_left, l_left)
+                total_balloons -= 1 # Pop our current balloon
+                l_index += 1
+            i += 1
+        arrows_used += 1
+    return arrows_used
 ```
 
 ## Tests
