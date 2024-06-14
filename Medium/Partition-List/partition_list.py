@@ -1,4 +1,4 @@
-""" This module holds a function to rotate linked-lists """
+""" This module holds a function to partition linked-lists """
 
 # pylint: disable=W0622
 
