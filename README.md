@@ -13,6 +13,7 @@ The following are a list of solutions to practice problems provided by [LeetCode
 
 | # | LeetCode Title | My Solution | Difficulty | Date | LeetCode Link |
 |:-:|:---------------|:-----------:|:----------:|:----:|:-------------:|
+|104| Maximum Depth of Binary Tree | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Maximum-Depth-Of-Binary-Tree) | Easy | June, 2024 | [Link](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|
 |146| LRU Cache | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/LRU-Cache) | Medium | June, 2024 | [Link](https://leetcode.com/problems/lru-cache/)|
 |86| Partition List | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Partition-List) | Medium | June, 2024 | [Link](https://leetcode.com/problems/partition-list/)|
 |61| Rotate List | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Rotate-List) | Medium | June, 2024 | [Link](https://leetcode.com/problems/rotate-list/)|
