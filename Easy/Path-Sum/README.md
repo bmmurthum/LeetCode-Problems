@@ -192,7 +192,9 @@ My solution found the result in 75% the time of the slowest method.
 
 ## Reflections
 
+These LeetCode problems would be less time consuming if I didn't write unit-tests. Especially when the unit-tests demand that I write another method to translate between forms of binary-trees. In the work place, this is for avoiding needing refactoring later, to avoid bugs ahead of time. It also reveals any statements that are unused, if the logic was messy.
 
+I'd like to run this as simulation of not having LeetCode acting as the tester, that our confidence of it working comes from the tests. Test-driven development, yadda yadda.
 
 ## Solution Variations
 
