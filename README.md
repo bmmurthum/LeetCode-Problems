@@ -13,6 +13,7 @@ The following are a list of solutions to practice problems provided by [LeetCode
 
 | # | LeetCode Title | My Solution | Difficulty | Date | LeetCode Link |
 |:-:|:---------------|:-----------:|:----------:|:----:|:-------------:|
+|112| Path Sum | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Path-Sum) | Easy | June, 2024 | [Link](https://leetcode.com/problems/path-sum/)|
 |105| Construct Binary Tree from Preorder and Inorder Traversal | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Construct-Binary-Tree-From-Preorder-And-Inorder-Traversal) | Medium | June, 2024 | [Link](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|
 |104| Maximum Depth of Binary Tree | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Maximum-Depth-Of-Binary-Tree) | Easy | June, 2024 | [Link](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|
 |146| LRU Cache | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/LRU-Cache) | Medium | June, 2024 | [Link](https://leetcode.com/problems/lru-cache/)|
