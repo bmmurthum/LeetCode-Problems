@@ -13,6 +13,7 @@ The following are a list of solutions to practice problems provided by [LeetCode
 
 | # | LeetCode Title | My Solution | Difficulty | Date | LeetCode Link |
 |:-:|:---------------|:-----------:|:----------:|:----:|:-------------:|
+|130| Surrounded Regions | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Surrounded-Regions) | Medium | June, 2024 | [Link](https://leetcode.com/problems/surrounded-regions/)|
 |200| Number of Islands | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Number-Of-Islands) | Medium | June, 2024 | [Link](https://leetcode.com/problems/number-of-islands/)|
 |112| Path Sum | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Path-Sum) | Easy | June, 2024 | [Link](https://leetcode.com/problems/path-sum/)|
 |105| Construct Binary Tree from Preorder and Inorder Traversal | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Construct-Binary-Tree-From-Preorder-And-Inorder-Traversal) | Medium | June, 2024 | [Link](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|
