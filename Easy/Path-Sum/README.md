@@ -128,7 +128,6 @@ def list_to_binary_tree(our_list, node=None, index=0) -> TreeNode:
     """
 
     # Only calls this for the head initial creation.
-    # node = None
     if index == 0:
         node = TreeNode(our_list[index], None, None)
 
