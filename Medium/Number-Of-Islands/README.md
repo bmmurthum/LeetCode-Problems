@@ -207,6 +207,8 @@ This LeetCode problem doesn't write for any handling of the initial `grid`, all 
 
 ## Solution Variations
 
+### other_solution_2.py
+
 `other_solution_2.py` uses Python's deque object as a stack of neighboring lands.
 
 They first start looking through their `grid` with a double-nested loop, and when finding a first land, they look at it with `bfs(r,c)`. Then inside that, they use a while loop to continue looking for more connected lands while there are items in their deque. They edit these positions to be `"0"` water as they look at connected land.
@@ -238,6 +240,8 @@ class Solution:
                     ans += 1
         return ans
 ```
+
+### other_solution_3.py
 
 `other_solution_3.py` uses a similar logic to my solution.
 
