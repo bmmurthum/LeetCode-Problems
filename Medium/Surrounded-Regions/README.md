@@ -27,7 +27,7 @@ Output:
 
 ## Overview
 
-Our solution iterates once over the 2D list `board` to find any `"O"` items that could be "regions" that need to have a "surround" applied. This search ignores the edges, because anything at that position will not possibly be surrounded.
+Our [solution](https://github.com/bmmurthum/LeetCode-Problems/blob/master/Medium/Surrounded-Regions/surrounded_regions.py) iterates once over the 2D list `board` to find any `"O"` items that could be "regions" that need to have a "surround" applied. This search ignores the edges, because anything at that position will not possibly be surrounded.
 
 Once it finds any `"O"` within the search, we use a recursive depth-first-search `mark_connected()` on that position to look for any connected pieces. Any connected pieces are marked temporarily with `"T"`, then if we find that it should be surrounded, because no piece touches an edge, we replace all the `"T"`s with `"X"` to apply the "surround".
 
@@ -35,7 +35,7 @@ If `mark_connected()` does find an edge, all pieces that are confirmed to stay `
 
 We try to minimize iteration through the `board` while inside `mark_connected()` by keeping track of the total area that encapsulates the "region" that we're looking at, with `min_x`, `max_x` and the rest. We update only this area upon this completion.
 
-We handle edge cases that wouldn't possibly have a "surround" with the following:
+Quickly in the beginning, we handle edge cases that wouldn't possibly have a "surround" with the following:
 
 ```python
 width = len(board[0])
@@ -68,23 +68,21 @@ We checked for:
 
 ### Code Coverage
 
-We received 100% code coverage on my method from the unit-test using the `coverage.py` tool.
-
-In `other_solution_2.py`, line 20, their checking for a given `grid` as a `None` is unused. This is given in the constraints of the problem as never going to happen, and could be deleted from their solution.
+We received 100% code coverage on my method and others' from the unit-test using the `coverage.py` tool.
 
 ```PowerShell
 > coverage run unit_test.py
 > coverage html
 > coverage report -m 
-Name                   Stmts   Miss  Cover   Missing
-----------------------------------------------------
-number_of_islands.py      36      0   100%
-other_solution_1.py       21      0   100%
-other_solution_2.py       19      1    95%   20
-test_cases.py             45      0   100%
-unit_test.py             111      0   100%
-----------------------------------------------------
-TOTAL                    232      1    99%
+Name                    Stmts   Miss  Cover   Missing
+-----------------------------------------------------
+other_solution_2.py        41      0   100%
+other_solution_3.py        25      0   100%
+surrounded_regions.py      76      0   100%
+test_cases.py              53      0   100%
+unit_tests.py             130      0   100%
+-----------------------------------------------------
+TOTAL                     325      0   100%
 ```
 
 ### Memory Usage Testing
