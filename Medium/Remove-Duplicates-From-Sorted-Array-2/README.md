@@ -137,7 +137,7 @@ If I were to try to beat the efficiency of `other_solution_2.py` while still hol
 
 This solution has similar logic. Instead of two explicit pointers, there's the use of `enumerate()` which may have an efficiency bonus. Their use of a boolean `is_twice` is lovely, instead of my checking on a total `value_ct` of this current number. The benefit of `value_ct` is that my script can be easily expanded to run on looking for `3`, or any number, max of each value.
 
-A big difference between mine and theirs is that they only write to the list in the case of when its needed. This is definitely a optimization.
+A big difference between mine and theirs is that they only write to the list in the case of when its needed. This is definitely an optimization.
 
 ```python
 class Solution:
