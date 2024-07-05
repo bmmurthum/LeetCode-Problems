@@ -80,10 +80,30 @@ GROUP BY v.customer_id
 Leetcode 197 - Rising Temperature
 https://leetcode.com/problems/rising-temperature/
 
-Write a solution to fine all dates' id with higher temperatures compared to its previous dates (yesterday). Return the result in any order.
+Write a solution to find all dates' id with higher temperatures compared to its previous dates (yesterday). Return the result in any order.
 
 */
 
 SELECT x.id
 FROM Weather x, Weather y
 WHERE DATEDIFF(x.recordDate,y.recordDate)=1 AND x.temperature>y.temperature
+
+
+/*
+Leetcode 1661 - Average Time of Process per Machine
+https://leetcode.com/problems/average-time-of-process-per-machine/
+
+Write a solution to find the average processing time of all processes on each machine.
+
+*/
+
+SELECT a.machine_id, ROUND(SUM(a.timestamp - b.start) / COUNT(a.process_id),3) as processing_time
+FROM Activity a
+LEFT JOIN (
+SELECT machine_id, process_id, timestamp as start
+FROM Activity b
+WHERE activity_type = "start"
+) b
+ON a.machine_id = b.machine_id and a.process_id = b.process_id
+WHERE activity_type = 'end'
+GROUP BY a.machine_id

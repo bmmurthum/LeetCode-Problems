@@ -188,7 +188,7 @@ This [video](https://www.youtube.com/watch?v=GFQaEYEc8_8) goes into specifics of
 
 - The table, which must be in 4NF, cannot be described as the logical result of joining some other tables together.
 
-**Notes from Edgar Codd**
+**Notes from Edgar Codd:**
 
 From [Wikipedia](https://en.wikipedia.org/wiki/Database_normalization) :
 
