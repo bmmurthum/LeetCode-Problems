@@ -13,6 +13,7 @@ The following are a list of solutions to practice problems provided by [LeetCode
 
 | # | LeetCode Title | My Solution | Difficulty | Date | LeetCode Link |
 |:-:|:---------------|:-----------:|:----------:|:----:|:-------------:|
+|130| Remove Duplicates from Sorted Array II | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Remove-Duplicates-From-Sorted-Array-2) | Medium | July, 2024 | [Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)|
 |130| Surrounded Regions | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Surrounded-Regions) | Medium | June, 2024 | [Link](https://leetcode.com/problems/surrounded-regions/)|
 |200| Number of Islands | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Number-Of-Islands) | Medium | June, 2024 | [Link](https://leetcode.com/problems/number-of-islands/)|
 |112| Path Sum | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Path-Sum) | Easy | June, 2024 | [Link](https://leetcode.com/problems/path-sum/)|
