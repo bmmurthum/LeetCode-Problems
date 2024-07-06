@@ -13,6 +13,7 @@ The following are a list of solutions to practice problems provided by [LeetCode
 
 | # | LeetCode Title | My Solution | Difficulty | Date | LeetCode Link |
 |:-:|:---------------|:-----------:|:----------:|:----:|:-------------:|
+|274| H-Index | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/H-Index) | Medium | July, 2024 | [Link](https://leetcode.com/problems/h-index/)|
 |169| Majority Element | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Majority-Element) | Easy | July, 2024 | [Link](https://leetcode.com/problems/majority-element/)|
 |80| Remove Duplicates from Sorted Array II | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Remove-Duplicates-From-Sorted-Array-2) | Medium | July, 2024 | [Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)|
 |130| Surrounded Regions | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Surrounded-Regions) | Medium | June, 2024 | [Link](https://leetcode.com/problems/surrounded-regions/)|
