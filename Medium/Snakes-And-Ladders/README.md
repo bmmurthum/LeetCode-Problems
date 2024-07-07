@@ -41,8 +41,7 @@ Output: 1
 ```
 
 ## Overview
-
-I first wrote a [depth-first](asdasd) solution. This was unaccepted by LeetCode for running over a time-limit. A description of my [breadth-first](asd) is what follows.
+I first wrote a [depth-first](https://github.com/bmmurthum/LeetCode-Problems/blob/master/Medium/Snakes-And-Ladders/snakes_and_ladders.py) solution. This was unaccepted by LeetCode for running over a time-limit. A description of my [breadth-first](https://github.com/bmmurthum/LeetCode-Problems/blob/master/Medium/Snakes-And-Ladders/snakes_and_ladders_2.py) is what follows.
 
 1. We grab some initial values of the dimension of the board to generate a board that is 1-dimensional.
     - This allows us to better iterate through using the values representing pointers to indexes,
