@@ -160,3 +160,73 @@ I used `timeit` to isolate the individual functions on a test cases.
 ## Reflections
 
 This is a [edit distance](https://en.wikipedia.org/wiki/Levenshtein_distance) problem at heart. If I wanted to find more optimizations, I'd study the solutions for this sort of problem. In the short term, I could likely optimize my function `is_one_char_diff()` to not be required to iterate through the length of the gene-string. I decided against this in seeing the constraints describing a limited 8 char length.
+
+## Solution Variations
+
+### minimum_genetic_mutation_2.py
+
+Their use of `neighbors()` that creates the string `neighbor` in many iterations feels inefficient.
+
+I like their use of `level_size = len(q)` to look at the options in this breadth-level, while keeping the queue `q`.
+
+Their use of `set()` for `bank` and `seen` is interesting, but unneeded.
+
+```python
+from collections import deque
+class Solution:
+    def min_mutation_2(self, startGene: str, endGene: str, bank: list[str]) -> int:
+        bank = set(bank)
+        choices = ["A", "C", "T", "G"]
+        q = deque([startGene])
+        seen = {startGene}
+        mutations = 0
+        def neighbors(s):
+            # input is a list s of characters
+            neighbors = []
+            for i in range(len(s)):
+                for choice in choices:
+                    if s[i] == choice:
+                        continue
+                    neighbor = s[:i] + choice + s[i + 1 :]
+                    # a gene must be in bank to be valid
+                    if neighbor in bank:
+                        neighbors.append(neighbor)
+            return neighbors
+        while q:
+            level_size = len(q)
+            for _ in range(level_size):
+                node = q.popleft()
+                if node == endGene:
+                    return mutations
+                for neighbor in neighbors(node):
+                    if neighbor not in seen:
+                        seen.add(neighbor)
+                        q.append(neighbor)
+            mutations += 1
+        return -1
+```
+
+### minimum_genetic_mutation_3.py
+
+Their `checkNeighbor(a, b)` being defined in one line is fun. Is it more readable? Let's see what a senior developer would say.
+
+With `q = deque([[startGene, 0]])`, their `q` holds the currently-looked-at gene and its related mutations to get to that gene. While I think that's interesting, I'd prefer it being more involved with the mechanic of the `while` loop.
+
+```python
+from collections import deque
+class Solution:
+    def min_mutation_3(self, startGene: str, endGene: str, bank: list[str]) -> int:
+        def checkNeighbor(a, b):
+            return sum([1 for i in range(len(a)) if a[i] != b[i]]) == 1
+        q = deque([[startGene, 0]])
+        visited = {startGene}
+        while q:
+            curr, mutation = q.popleft()
+            if curr == endGene:
+                return mutation
+            for nei in bank:
+                if checkNeighbor(curr, nei) and nei not in visited:
+                    q.append([nei, mutation + 1])
+                    visited.add(nei)
+        return -1
+```
