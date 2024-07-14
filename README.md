@@ -13,6 +13,7 @@ The following are a list of solutions to practice problems provided by [LeetCode
 
 | # | LeetCode Title | My Solution | Difficulty | Date | LeetCode Link |
 |:-:|:---------------|:-----------:|:----------:|:----:|:-------------:|
+|433| Minimum Genetic Mutation | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Minimum-Genetic-Mutation/) | Medium | July, 2024 | [Link](https://leetcode.com/problems/minimum-genetic-mutation/)|
 |909| Snakes and Ladders | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Snakes-And-Ladders/) | Medium | July, 2024 | [Link](https://leetcode.com/problems/snakes-and-ladders/)|
 |274| H-Index | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/H-Index) | Medium | July, 2024 | [Link](https://leetcode.com/problems/h-index/)|
 |169| Majority Element | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Majority-Element) | Easy | July, 2024 | [Link](https://leetcode.com/problems/majority-element/)|

@@ -1,11 +1,11 @@
-"""A collection of test cases and solutions for `majority_element.py` tests."""
+"""A collection of test cases and solutions for `snakes_and_ladders.py` tests."""
 
 import random
 
 
 class TestCases:
     """
-    A collection of test cases and solutions for `majority_element.py` tests.
+    A collection of test cases and solutions for `snakes_and_ladders.py` tests.
     """
 
     test_string = "Case: Example case."
