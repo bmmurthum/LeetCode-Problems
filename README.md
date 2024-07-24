@@ -13,6 +13,7 @@ The following are a list of solutions to practice problems provided by [LeetCode
 
 | # | LeetCode Title | My Solution | Difficulty | Date | LeetCode Link |
 |:-:|:---------------|:-----------:|:----------:|:----:|:-------------:|
+|205| Isomorphic Strings | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Isomorphic-Strings/) | Easy | July, 2024 | [Link](https://leetcode.com/problems/isomorphic-strings/)|
 |289| Game of Life | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Game-Of-Life/) | Medium | July, 2024 | [Link](https://leetcode.com/problems/game-of-life/)|
 |73| Set Matrix Zeroes | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Set-Matrix-Zeroes/) | Medium | July, 2024 | [Link](https://leetcode.com/problems/set-matrix-zeroes/)|
 |48| Rotate Image | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Rotate-Image/) | Medium | July, 2024 | [Link](https://leetcode.com/problems/rotate-image/)|
