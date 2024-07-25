@@ -13,6 +13,7 @@ The following are a list of solutions to practice problems provided by [LeetCode
 
 | # | LeetCode Title | My Solution | Difficulty | Date | LeetCode Link |
 |:-:|:---------------|:-----------:|:----------:|:----:|:-------------:|
+|219| Contains Duplicate II | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Contains-Duplicate-II/) | Easy | July, 2024 | [Link](https://leetcode.com/problems/contains-duplicate-ii/)|
 |202| Happy Number | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Happy-Number/) | Easy | July, 2024 | [Link](https://leetcode.com/problems/happy-number/)|
 |205| Isomorphic Strings | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Isomorphic-Strings/) | Easy | July, 2024 | [Link](https://leetcode.com/problems/isomorphic-strings/)|
 |289| Game of Life | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Game-Of-Life/) | Medium | July, 2024 | [Link](https://leetcode.com/problems/game-of-life/)|
