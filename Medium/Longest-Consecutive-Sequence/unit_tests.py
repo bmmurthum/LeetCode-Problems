@@ -4,7 +4,9 @@ import unittest
 from contextlib import contextmanager
 import sys
 import os
-from contains_duplicate_II import Solution
+from longest_consecutive_sequence import Solution
+from longest_consecutive_sequence_2 import Solution as Solution2
+from longest_consecutive_sequence_3 import Solution as Solution3
 from testcases import TestCases
 
 
@@ -23,7 +25,7 @@ def suppress_stdout():
             sys.stderr = old_stderr
 
 
-METHOD_COUNT = 6
+METHOD_COUNT = 3
 
 
 class Testing(unittest.TestCase):
@@ -31,7 +33,7 @@ class Testing(unittest.TestCase):
     Testing class for unittest library
     """
 
-    def which_method_to_test(self, which, x, y) -> int:
+    def which_method_to_test(self, which, x) -> int:
         """
         Handles testing multiple implementations of a given method.
 
@@ -42,33 +44,23 @@ class Testing(unittest.TestCase):
 
         # Collection of solutions
         if which == 1:
-            z = Solution().contains_nearby_duplicate_a(x, y)
+            z = Solution().longest_consecutive(x)
             return z
         elif which == 2:
-            z = Solution().contains_nearby_duplicate_b(x, y)
+            z = Solution2().longest_consecutive_2(x)
             return z
         elif which == 3:
-            z = Solution().contains_nearby_duplicate_c(x, y)
-            return z
-        elif which == 4:
-            z = Solution().contains_nearby_duplicate_d(x, y)
-            return z
-        elif which == 5:
-            z = Solution().contains_nearby_duplicate_e(x, y)
-            return z
-        elif which == 6:
-            z = Solution().contains_nearby_duplicate_f(x, y)
+            z = Solution3().longest_consecutive_3(x)
             return z
 
     def test_1(self):
         """Test 1"""
         which_test = TestCases.test_1
         test_input_1 = which_test[0]
-        test_input_2 = which_test[1]
-        correct = which_test[2]
-        test_description = which_test[3]
+        correct = which_test[1]
+        test_description = which_test[2]
         for w in range(1, METHOD_COUNT + 1):
-            result = self.which_method_to_test(w, test_input_1, test_input_2)
+            result = self.which_method_to_test(w, test_input_1)
             self.assertEqual(
                 result,
                 correct,
@@ -79,11 +71,10 @@ class Testing(unittest.TestCase):
         """Test 2"""
         which_test = TestCases.test_2
         test_input_1 = which_test[0]
-        test_input_2 = which_test[1]
-        correct = which_test[2]
-        test_description = which_test[3]
+        correct = which_test[1]
+        test_description = which_test[2]
         for w in range(1, METHOD_COUNT + 1):
-            result = self.which_method_to_test(w, test_input_1, test_input_2)
+            result = self.which_method_to_test(w, test_input_1)
             self.assertEqual(
                 result,
                 correct,
@@ -94,11 +85,10 @@ class Testing(unittest.TestCase):
         """Test 3"""
         which_test = TestCases.test_3
         test_input_1 = which_test[0]
-        test_input_2 = which_test[1]
-        correct = which_test[2]
-        test_description = which_test[3]
+        correct = which_test[1]
+        test_description = which_test[2]
         for w in range(1, METHOD_COUNT + 1):
-            result = self.which_method_to_test(w, test_input_1, test_input_2)
+            result = self.which_method_to_test(w, test_input_1)
             self.assertEqual(
                 result,
                 correct,
@@ -109,11 +99,10 @@ class Testing(unittest.TestCase):
         """Test 4"""
         which_test = TestCases.test_4
         test_input_1 = which_test[0]
-        test_input_2 = which_test[1]
-        correct = which_test[2]
-        test_description = which_test[3]
+        correct = which_test[1]
+        test_description = which_test[2]
         for w in range(1, METHOD_COUNT + 1):
-            result = self.which_method_to_test(w, test_input_1, test_input_2)
+            result = self.which_method_to_test(w, test_input_1)
             self.assertEqual(
                 result,
                 correct,
@@ -124,11 +113,10 @@ class Testing(unittest.TestCase):
         """Test 5"""
         which_test = TestCases.test_5
         test_input_1 = which_test[0]
-        test_input_2 = which_test[1]
-        correct = which_test[2]
-        test_description = which_test[3]
+        correct = which_test[1]
+        test_description = which_test[2]
         for w in range(1, METHOD_COUNT + 1):
-            result = self.which_method_to_test(w, test_input_1, test_input_2)
+            result = self.which_method_to_test(w, test_input_1)
             self.assertEqual(
                 result,
                 correct,
@@ -139,11 +127,10 @@ class Testing(unittest.TestCase):
         """Test 6"""
         which_test = TestCases.test_6
         test_input_1 = which_test[0]
-        test_input_2 = which_test[1]
-        correct = which_test[2]
-        test_description = which_test[3]
+        correct = which_test[1]
+        test_description = which_test[2]
         for w in range(1, METHOD_COUNT + 1):
-            result = self.which_method_to_test(w, test_input_1, test_input_2)
+            result = self.which_method_to_test(w, test_input_1)
             self.assertEqual(
                 result,
                 correct,
@@ -154,11 +141,10 @@ class Testing(unittest.TestCase):
         """Test 7"""
         which_test = TestCases.test_7
         test_input_1 = which_test[0]
-        test_input_2 = which_test[1]
-        correct = which_test[2]
-        test_description = which_test[3]
+        correct = which_test[1]
+        test_description = which_test[2]
         for w in range(1, METHOD_COUNT + 1):
-            result = self.which_method_to_test(w, test_input_1, test_input_2)
+            result = self.which_method_to_test(w, test_input_1)
             self.assertEqual(
                 result,
                 correct,
@@ -169,56 +155,10 @@ class Testing(unittest.TestCase):
         """Test 8"""
         which_test = TestCases.test_8
         test_input_1 = which_test[0]
-        test_input_2 = which_test[1]
-        correct = which_test[2]
-        test_description = which_test[3]
+        correct = which_test[1]
+        test_description = which_test[2]
         for w in range(1, METHOD_COUNT + 1):
-            result = self.which_method_to_test(w, test_input_1, test_input_2)
-            self.assertEqual(
-                result,
-                correct,
-                "Which method: " + str(w) + " - " + test_description,
-            )
-
-    def test_9(self):
-        """Test 9"""
-        which_test = TestCases.test_9
-        test_input_1 = which_test[0]
-        test_input_2 = which_test[1]
-        correct = which_test[2]
-        test_description = which_test[3]
-        for w in range(1, METHOD_COUNT + 1):
-            result = self.which_method_to_test(w, test_input_1, test_input_2)
-            self.assertEqual(
-                result,
-                correct,
-                "Which method: " + str(w) + " - " + test_description,
-            )
-
-    def test_10(self):
-        """Test 10"""
-        which_test = TestCases.test_10
-        test_input_1 = which_test[0]
-        test_input_2 = which_test[1]
-        correct = which_test[2]
-        test_description = which_test[3]
-        for w in range(1, METHOD_COUNT + 1):
-            result = self.which_method_to_test(w, test_input_1, test_input_2)
-            self.assertEqual(
-                result,
-                correct,
-                "Which method: " + str(w) + " - " + test_description,
-            )
-
-    def test_11(self):
-        """Test 11"""
-        which_test = TestCases.test_11
-        test_input_1 = which_test[0]
-        test_input_2 = which_test[1]
-        correct = which_test[2]
-        test_description = which_test[3]
-        for w in range(1, METHOD_COUNT + 1):
-            result = self.which_method_to_test(w, test_input_1, test_input_2)
+            result = self.which_method_to_test(w, test_input_1)
             self.assertEqual(
                 result,
                 correct,
