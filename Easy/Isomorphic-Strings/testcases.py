@@ -1,9 +1,9 @@
-"""A collection of test cases and solutions for `rotate_image.py` tests."""
+"""A collection of test cases and solutions for `isomorphic_strings.py` tests."""
 
 
 class TestCases:
     """
-    A collection of test cases and solutions for `rotate_image.py` tests.
+    A collection of test cases and solutions for `isomorphic_strings.py` tests.
     """
 
     test_string = "Case: Example 1."

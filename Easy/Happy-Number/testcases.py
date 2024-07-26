@@ -1,9 +1,9 @@
-"""A collection of test cases and solutions for `rotate_image.py` tests."""
+"""A collection of test cases and solutions for `happy_number.py` tests."""
 
 
 class TestCases:
     """
-    A collection of test cases and solutions for `rotate_image.py` tests.
+    A collection of test cases and solutions for `happy_number.py` tests.
     """
 
     # 19  > 1**2 + 9**2 == 82

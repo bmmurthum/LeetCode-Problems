@@ -1,9 +1,9 @@
-"""A collection of test cases and solutions for `rotate_image.py` tests."""
+"""A collection of test cases and solutions for `game_of_life.py` tests."""
 
 
 class TestCases:
     """
-    A collection of test cases and solutions for `rotate_image.py` tests.
+    A collection of test cases and solutions for `game_of_life.py` tests.
     """
 
     #  0 1 0     0 0 0

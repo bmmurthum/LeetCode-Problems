@@ -1,9 +1,9 @@
-"""A collection of test cases and solutions for `rotate_image.py` tests."""
+"""A collection of test cases and solutions for `set_matrix_zeroes.py` tests."""
 
 
 class TestCases:
     """
-    A collection of test cases and solutions for `rotate_image.py` tests.
+    A collection of test cases and solutions for `set_matrix_zeroes.py` tests.
     """
 
     test_string = "Case: Example case."
