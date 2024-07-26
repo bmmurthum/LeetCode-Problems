@@ -13,6 +13,7 @@ The following are a list of solutions to practice problems provided by [LeetCode
 
 | # | LeetCode Title | My Solution | Difficulty | Date | LeetCode Link |
 |:-:|:---------------|:-----------:|:----------:|:----:|:-------------:|
+|57| Insert Interval | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Insert-Interval/) | Medium | July, 2024 | [Link](https://leetcode.com/problems/insert-interval/)|
 |228| Summary Ranges | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Summary-Ranges/) | Easy | July, 2024 | [Link](https://leetcode.com/problems/summary-ranges/)|
 |128| Longest Consecutive Sequence | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Longest-Consecutive-Sequence/) | Medium | July, 2024 | [Link](https://leetcode.com/problems/longest-consecutive-sequence/)|
 |219| Contains Duplicate II | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Contains-Duplicate-II/) | Easy | July, 2024 | [Link](https://leetcode.com/problems/contains-duplicate-ii/)|
