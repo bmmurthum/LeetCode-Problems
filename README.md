@@ -13,6 +13,7 @@ The following are a list of solutions to practice problems provided by [LeetCode
 
 | # | LeetCode Title | My Solution | Difficulty | Date | LeetCode Link |
 |:-:|:---------------|:-----------:|:----------:|:----:|:-------------:|
+|138| Copy List with Random Pointer | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Copy-List-With-Random-Pointer/) | Medium | July, 2024 | [Link](https://leetcode.com/problems/copy-list-with-random-pointer/)|
 |141| Linked List Cycle | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Linked-List-Cycle/) | Easy | July, 2024 | [Link](https://leetcode.com/problems/linked-list-cycle/)|
 |57| Insert Interval | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Insert-Interval/) | Medium | July, 2024 | [Link](https://leetcode.com/problems/insert-interval/)|
 |228| Summary Ranges | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Summary-Ranges/) | Easy | July, 2024 | [Link](https://leetcode.com/problems/summary-ranges/)|
