@@ -9,6 +9,17 @@ The following are a list of solutions to practice problems provided by [LeetCode
 - [SQL Exercises](https://github.com/bmmurthum/LeetCode-Problems/tree/master/SQL50)
 - [Testing Practices](https://github.com/bmmurthum/LeetCode-Problems/blob/master/TESTING.md)
 
+## Speed Runs
+
+No checking against LeetCode tests before pencil-down. No documentation.
+
+- **June 29, 2024**
+  - 1768 - Merge Strings Alternately - 9 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/merge_strings_alternately.py) - [LeetCode](https://leetcode.com/problems/merge-strings-alternately/)
+  - 1071 - Greatest Common Divisor of Strings - 30 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/greatest_common_divisor_of_strings.py) - [LeetCode](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
+  - 283 - Move Zeroes - 13 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/move_zeroes.py) - [LeetCode](https://leetcode.com/problems/move-zeroes/).
+  - 1732 - Find the Highest Altitude - 4 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/find_the_highest_altitude.py) - [LeetCode](https://leetcode.com/problems/find-the-highest-altitude/)
+  - 2215 - Find the Difference of Two Arrays - 6 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/find_the_difference_of_two_arrays.py) - [LeetCode](https://leetcode.com/problems/find-the-difference-of-two-arrays/)
+
 ## List of Problems by Date
 
 | # | LeetCode Title | My Solution | Difficulty | Date | LeetCode Link |
