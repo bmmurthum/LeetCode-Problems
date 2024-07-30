@@ -24,6 +24,7 @@ No checking against LeetCode tests before pencil-down. No documentation.
 
 | # | LeetCode Title | My Solution | Difficulty | Date | LeetCode Link |
 |:-:|:---------------|:-----------:|:----------:|:----:|:-------------:|
+|121| Best Time to Buy and Sell Stock | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/East/Best-Time-To-Buy-And-Sell-Stock/) | Easy | July, 2024 | [Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|
 |138| Copy List with Random Pointer | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Copy-List-With-Random-Pointer/) | Medium | July, 2024 | [Link](https://leetcode.com/problems/copy-list-with-random-pointer/)|
 |141| Linked List Cycle | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Linked-List-Cycle/) | Easy | July, 2024 | [Link](https://leetcode.com/problems/linked-list-cycle/)|
 |57| Insert Interval | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Insert-Interval/) | Medium | July, 2024 | [Link](https://leetcode.com/problems/insert-interval/)|
