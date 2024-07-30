@@ -1,4 +1,4 @@
-# Copy List with Random Pointer
+# Best Time to Buy and Sell Stock
 
 **Description:**
 
