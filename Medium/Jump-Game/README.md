@@ -70,9 +70,12 @@ We implemented unit-tests for this problem with `import unittest`. We designed t
 
 We checked for:
 
-- LeetCode's three example cases
-- All descending numbers
-- All ascending numbers
+- LeetCode's two example cases.
+- Many ones with zero as last value.
+- Quick jump to the end value.
+- Single item. With zero, without zero.
+- Jump several consecutive jumps to end.
+- Zero at beginning.
 
 ```text
 ** Unit Tests **

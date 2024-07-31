@@ -11,14 +11,21 @@ The following are a list of solutions to practice problems provided by [LeetCode
 
 ## Speed Runs
 
-No checking against LeetCode tests before pencil-down. No documentation.
+No checking against LeetCode tests before pencil-down. No documentation. Aim for less than 30 minutes.
 
-- **June 29, 2024**
+- **June 29, 2024 - 4 of 5**
   - 1768 - Merge Strings Alternately - 9 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/merge_strings_alternately.py) - [LeetCode](https://leetcode.com/problems/merge-strings-alternately/)
   - 1071 - Greatest Common Divisor of Strings - 30 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/greatest_common_divisor_of_strings.py) - [LeetCode](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
   - 283 - Move Zeroes - 13 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/move_zeroes.py) - [LeetCode](https://leetcode.com/problems/move-zeroes/).
   - 1732 - Find the Highest Altitude - 4 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/find_the_highest_altitude.py) - [LeetCode](https://leetcode.com/problems/find-the-highest-altitude/)
   - 2215 - Find the Difference of Two Arrays - 6 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/find_the_difference_of_two_arrays.py) - [LeetCode](https://leetcode.com/problems/find-the-difference-of-two-arrays/)
+
+- **June 30, 2024 - 3 of 5**
+  - 1431 - Kids With the Greatest Number of Candies - 5 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-2/kids_with_the_greatest_number_of_candies.py) - [LeetCode](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)
+  - 605 - Can Place Flowers - 8 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-2/can_place_flowers.py) - [LeetCode](https://leetcode.com/problems/can-place-flowers/)
+  - 345 - Reverse Vowels of a String - 6 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-2/reverse_vowels_of_a_string.py) - [LeetCode](https://leetcode.com/problems/reverse-vowels-of-a-string/).
+  - 238 - Product of Array Except Self - 34 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-2/product_of_array_except_self.py) - [LeetCode](https://leetcode.com/problems/product-of-array-except-self/)
+  - 334 - Increasing Triplet Subsequence - 40+ min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-2/increasing_triplet_subsequence.py) - [LeetCode](https://leetcode.com/problems/increasing-triplet-subsequence/)
 
 ## List of Problems by Date
 
