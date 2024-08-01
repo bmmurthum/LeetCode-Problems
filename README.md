@@ -31,6 +31,7 @@ No checking against LeetCode tests before pencil-down. No documentation. Aim for
 
 | # | LeetCode Title | My Solution | Difficulty | Date | LeetCode Link |
 |:-:|:---------------|:-----------:|:----------:|:----:|:-------------:|
+|45| Jump Game II | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Jump-Game-II/) | Medium | August, 2024 | [Link](https://leetcode.com/problems/jump-game-ii/)|
 |55| Jump Game | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Jump-Game/) | Medium | July, 2024 | [Link](https://leetcode.com/problems/jump-game/)|
 |122| Best Time to Buy and Sell Stock II | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Best-Time-To-Buy-And-Sell-Stock-II/) | Medium | July, 2024 | [Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|
 |121| Best Time to Buy and Sell Stock | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Easy/Best-Time-To-Buy-And-Sell-Stock/) | Easy | July, 2024 | [Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|

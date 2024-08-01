@@ -1,4 +1,4 @@
-""" Module to find if a linked-list has any cycles. """
+""" Module to find if there is a jumping path to the end index. """
 
 # Comment lines too long. We want to adhere to Google's spec on docstrings.
 # pylint: disable=C0301

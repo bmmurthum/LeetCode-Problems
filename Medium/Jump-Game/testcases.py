@@ -1,9 +1,9 @@
-"""A collection of test cases and solutions for `best_time_to_buy_and_sell_stock_II.py` tests."""
+"""A collection of test cases and solutions for `jump_game.py` tests."""
 
 
 class TestCases:
     """
-    A collection of test cases and solutions for `best_time_to_buy_and_sell_stock_II.py` tests.
+    A collection of test cases and solutions for `jump_game.py` tests.
     """
 
     test_string = "Case: Example 1."
