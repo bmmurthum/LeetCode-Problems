@@ -9,23 +9,36 @@ The following are a list of solutions to practice problems provided by [LeetCode
 - [SQL Exercises](https://github.com/bmmurthum/LeetCode-Problems/tree/master/SQL50)
 - [Testing Practices](https://github.com/bmmurthum/LeetCode-Problems/blob/master/TESTING.md)
 
-## Speed Runs
+## Speed Rounds
 
-No checking against LeetCode tests before pencil-down. No documentation. Aim for less than 30 minutes.
+No running code or checking against LeetCode tests before pencil-down. No documentation. Aim for finishing in less than 20 minutes.
 
-- **June 29, 2024 - 4 of 5**
-  - 1768 - Merge Strings Alternately - 9 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/merge_strings_alternately.py) - [LeetCode](https://leetcode.com/problems/merge-strings-alternately/)
-  - 1071 - Greatest Common Divisor of Strings - 30 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/greatest_common_divisor_of_strings.py) - [LeetCode](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
-  - 283 - Move Zeroes - 13 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/move_zeroes.py) - [LeetCode](https://leetcode.com/problems/move-zeroes/).
-  - 1732 - Find the Highest Altitude - 4 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/find_the_highest_altitude.py) - [LeetCode](https://leetcode.com/problems/find-the-highest-altitude/)
-  - 2215 - Find the Difference of Two Arrays - 6 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/find_the_difference_of_two_arrays.py) - [LeetCode](https://leetcode.com/problems/find-the-difference-of-two-arrays/)
+- **August 1, 2024 - 4 of 5**
+  - 58 - Length of Last Word - 5 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-3/length_of_last_word.py) - [LeetCode](https://leetcode.com/problems/length-of-last-word/)
+  - 14 - Longest Common Prefix - 6 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-3/longest_common_prefix.py) - [LeetCode](https://leetcode.com/problems/longest-common-prefix/)
+  - 6 - Zigzag Conversion - 13 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-3/zigzag_conversion.py) - [LeetCode](https://leetcode.com/problems/zigzag-conversion/)
+  - 28 - Find the Index of the First Occurrence in a String - 6 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-3/find_the_index_of_the_first_occurrence_in_a_string.py) - [LeetCode](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)
+  - 6 - Is Subsequence - 20+ min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-3/is_subsequence.py) - [LeetCode](https://leetcode.com/problems/is-subsequence/)
+    - Failed submission, had to rewrite from scratch.
 
 - **June 30, 2024 - 3 of 5**
   - 1431 - Kids With the Greatest Number of Candies - 5 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-2/kids_with_the_greatest_number_of_candies.py) - [LeetCode](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)
   - 605 - Can Place Flowers - 8 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-2/can_place_flowers.py) - [LeetCode](https://leetcode.com/problems/can-place-flowers/)
   - 345 - Reverse Vowels of a String - 6 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-2/reverse_vowels_of_a_string.py) - [LeetCode](https://leetcode.com/problems/reverse-vowels-of-a-string/).
-  - 238 - Product of Array Except Self - 34 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-2/product_of_array_except_self.py) - [LeetCode](https://leetcode.com/problems/product-of-array-except-self/)
+  - 238 - Product of Array Except Self - 30+ min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-2/product_of_array_except_self.py) - [LeetCode](https://leetcode.com/problems/product-of-array-except-self/)
+    - Had to look up prefix/suffix patterns.
   - 334 - Increasing Triplet Subsequence - 40+ min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-2/increasing_triplet_subsequence.py) - [LeetCode](https://leetcode.com/problems/increasing-triplet-subsequence/)
+    - Is this dynamic programming? prefix/suffix?
+
+- **June 29, 2024 - 4 of 5**
+  - 1768 - Merge Strings Alternately - 9 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/merge_strings_alternately.py) - [LeetCode](https://leetcode.com/problems/merge-strings-alternately/)
+  - 1071 - Greatest Common Divisor of Strings - 30 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/greatest_common_divisor_of_strings.py) - [LeetCode](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
+    - Spent too much time exploring a solution that wouldn't work.
+  - 283 - Move Zeroes - 13 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/move_zeroes.py) - [LeetCode](https://leetcode.com/problems/move-zeroes/).
+  - 1732 - Find the Highest Altitude - 4 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/find_the_highest_altitude.py) - [LeetCode](https://leetcode.com/problems/find-the-highest-altitude/)
+  - 2215 - Find the Difference of Two Arrays - 6 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/find_the_difference_of_two_arrays.py) - [LeetCode](https://leetcode.com/problems/find-the-difference-of-two-arrays/)
+
+
 
 ## List of Problems by Date
 
