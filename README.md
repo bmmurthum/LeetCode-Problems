@@ -18,7 +18,7 @@ No running code or checking against LeetCode tests before pencil-down. No docume
   - 14 - Longest Common Prefix - 6 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-3/longest_common_prefix.py) - [LeetCode](https://leetcode.com/problems/longest-common-prefix/)
   - 6 - Zigzag Conversion - 13 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-3/zigzag_conversion.py) - [LeetCode](https://leetcode.com/problems/zigzag-conversion/)
   - 28 - Find the Index of the First Occurrence in a String - 6 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-3/find_the_index_of_the_first_occurrence_in_a_string.py) - [LeetCode](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)
-  - 6 - Is Subsequence - 20+ min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-3/is_subsequence.py) - [LeetCode](https://leetcode.com/problems/is-subsequence/)
+  - 392 - Is Subsequence - 20+ min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-3/is_subsequence.py) - [LeetCode](https://leetcode.com/problems/is-subsequence/)
     - Failed submission, had to rewrite from scratch.
 
 - **June 30, 2024 - 3 of 5**
@@ -44,6 +44,7 @@ No running code or checking against LeetCode tests before pencil-down. No docume
 
 | # | LeetCode Title | My Solution | Difficulty | Date | LeetCode Link |
 |:-:|:---------------|:-----------:|:----------:|:----:|:-------------:|
+|380| Insert Delete GetRandom O(1) | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Insert-Delete-GetRandom-O1/) | Medium | August, 2024 | [Link](https://leetcode.com/problems/insert-delete-getrandom-o1/)|
 |45| Jump Game II | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Jump-Game-II/) | Medium | August, 2024 | [Link](https://leetcode.com/problems/jump-game-ii/)|
 |55| Jump Game | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Jump-Game/) | Medium | July, 2024 | [Link](https://leetcode.com/problems/jump-game/)|
 |122| Best Time to Buy and Sell Stock II | [Python](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Medium/Best-Time-To-Buy-And-Sell-Stock-II/) | Medium | July, 2024 | [Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|
