@@ -13,6 +13,13 @@ The following are a list of solutions to practice problems provided by [LeetCode
 
 No running code or checking against LeetCode tests before pencil-down. No documentation. Aim for finishing in less than 20 minutes.
 
+- **August 3, 2024 - 2 of 5**
+  - 1679 - Max Number of K-Sum Pairs - 14 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-4/max_number_of_ksum_pairs.py) - [LeetCode](https://leetcode.com/problems/max-number-of-k-sum-pairs/)
+  - 1456 - Maximum Number of Vowels in a Substring of Given Length - 9 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-4/maximum_number_of_vowels_in_a_substring_given_length.py) - [LeetCode](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
+  - 643 - Maximum Average Subarray I - 11 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-4/maximum_average_subarray_i.py) - [LeetCode](https://leetcode.com/problems/maximum-average-subarray-i/)
+  - 724 - Find Pivot Index - 19 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-4/find_pivot_index.py) - [LeetCode](https://leetcode.com/problems/find-pivot-index/)
+  - 443 - String Compression - 19 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-4/string_compression.py) - [LeetCode](https://leetcode.com/problems/string-compression/)
+
 - **August 1, 2024 - 4 of 5**
   - 58 - Length of Last Word - 5 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-3/length_of_last_word.py) - [LeetCode](https://leetcode.com/problems/length-of-last-word/)
   - 14 - Longest Common Prefix - 6 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-3/longest_common_prefix.py) - [LeetCode](https://leetcode.com/problems/longest-common-prefix/)
