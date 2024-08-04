@@ -15,8 +15,11 @@ No running code or checking against LeetCode tests before pencil-down. No docume
 
 - **August 3, 2024 - 2 of 5**
   - 1679 - Max Number of K-Sum Pairs - 14 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-4/max_number_of_ksum_pairs.py) - [LeetCode](https://leetcode.com/problems/max-number-of-k-sum-pairs/)
+    - Time limit exceeded. Had to explore new pattern.
   - 1456 - Maximum Number of Vowels in a Substring of Given Length - 9 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-4/maximum_number_of_vowels_in_a_substring_given_length.py) - [LeetCode](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
+    - Time limit exceeded. Had to explore new pattern without `sum()`.
   - 643 - Maximum Average Subarray I - 11 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-4/maximum_average_subarray_i.py) - [LeetCode](https://leetcode.com/problems/maximum-average-subarray-i/)
+    - Time limit exceeded. Changed from using `sum()` on truncated lists.
   - 724 - Find Pivot Index - 19 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-4/find_pivot_index.py) - [LeetCode](https://leetcode.com/problems/find-pivot-index/)
   - 443 - String Compression - 19 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-4/string_compression.py) - [LeetCode](https://leetcode.com/problems/string-compression/)
 
