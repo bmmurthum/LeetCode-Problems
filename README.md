@@ -48,7 +48,9 @@ No running code or checking against LeetCode tests before pencil-down. No docume
   - 1732 - Find the Highest Altitude - 4 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/find_the_highest_altitude.py) - [LeetCode](https://leetcode.com/problems/find-the-highest-altitude/)
   - 2215 - Find the Difference of Two Arrays - 6 min - [Solution](https://github.com/bmmurthum/LeetCode-Problems/tree/master/Speed-Rounds/Speed-Round-1/find_the_difference_of_two_arrays.py) - [LeetCode](https://leetcode.com/problems/find-the-difference-of-two-arrays/)
 
+## 4-Hour Rounds
 
+- **August 4, 2024** - Easy: 1 - Medium: 6 - [Solutions](https://github.com/bmmurthum/LeetCode-Problems/tree/master/4-Hour-Rounds/4-Hour-Round-1/)
 
 ## List of Problems by Date
 
