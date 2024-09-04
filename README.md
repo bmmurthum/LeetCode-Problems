@@ -50,6 +50,7 @@ No running code or checking against LeetCode tests before pencil-down. No docume
 
 ## 4-Hour Rounds
 
+- **September 4, 2024** - Medium: 4 - [Solutions](https://github.com/bmmurthum/LeetCode-Problems/tree/master/4-Hour-Rounds/4-Hour-Round-6/)
 - **September 4, 2024** - Medium: 4 - [Solutions](https://github.com/bmmurthum/LeetCode-Problems/tree/master/4-Hour-Rounds/4-Hour-Round-5/)
 - **September 1, 2024** - Medium: 4 - [Solutions](https://github.com/bmmurthum/LeetCode-Problems/tree/master/4-Hour-Rounds/4-Hour-Round-4/)
 - **August 6, 2024** - Easy: 2 - Medium: 3 - [Solutions](https://github.com/bmmurthum/LeetCode-Problems/tree/master/4-Hour-Rounds/4-Hour-Round-3/)
