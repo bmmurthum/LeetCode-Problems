@@ -1,6 +1,8 @@
 """Problem from LeetCode.com"""
 
 # pylint: disable=C0200
+# pylint: disable=W0511
+# pylint: disable=W0612
 
 
 class Solution:
