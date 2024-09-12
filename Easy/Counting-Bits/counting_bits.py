@@ -6,7 +6,8 @@ class Solution:
 
     def count_bits(self, n: int) -> list[int]:
         """
-        Build a list that contains the number of 1s in the binary representations from 0 -> n.
+        Build a list that contains the number of 1s in the binary
+        representations from 0 -> n.
 
         Args:
             `n`: The ending number.
