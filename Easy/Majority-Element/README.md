@@ -1,4 +1,4 @@
-# Remove Duplicated From Sorted Array II
+# Majority Element
 
 **Description:**
 
